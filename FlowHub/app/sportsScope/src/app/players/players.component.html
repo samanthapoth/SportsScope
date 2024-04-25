@@ -1,0 +1,24 @@
+<!-- players.component.html -->
+<div class="table-container">
+    <h2>Players</h2>
+    <button class="upload-button" (click)="uploadStats()">Upload Stats</button> <!-- Styled upload button -->
+    <table class="stats-table">
+      <thead>
+        <tr>
+          <th>Player Name</th>
+          <th>Points</th>
+          <th>Assists</th>
+          <th>Rebounds</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let player of players">
+          <td>{{ player.name }}</td>
+          <td>{{ player.points }}</td>
+          <td>{{ player.assists }}</td>
+          <td>{{ player.rebounds }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

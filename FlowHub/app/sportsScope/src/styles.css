@@ -1,0 +1,126 @@
+/* styles.css */
+/* styles.css */
+header {
+    background-color: #00bcd4; /* Lighter shade of blue */
+    color: #fff;
+    padding: 10px 20px;
+  }
+  
+  nav {
+    display: flex;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  nav a.active {
+    font-weight: bold;
+  }
+  
+  .table-container {
+    margin-top: 20px;
+  }
+  
+  .stats-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .stats-table th,
+  .stats-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .stats-table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  /* styles.css */
+.login-container, .register-container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .login-container form, .register-container form {
+    margin-top: 20px;
+  }
+  
+  .login-container label, .register-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .login-container input, .register-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .login-container button, .register-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .login-container button:disabled, .register-container button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .login-container p, .register-container p {
+    margin-top: 10px;
+  }
+  
+  .login-container a, .register-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-container a:hover, .register-container a:hover {
+    text-decoration: underline;
+  }
+  
+  /* styles.css */
+body {
+    background: linear-gradient(to bottom right, #2196f3, #03a9f4, #00bcd4, #009688);
+    height: 100vh;
+  }
+  
+  .upload-button {
+    padding: 10px 20px;
+    background: linear-gradient(to bottom right, #ff5722, #ff9800);
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .upload-button:hover {
+    background: linear-gradient(to bottom right, #ff9800, #ff5722);
+  }
+  
+  .stats-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .stats-table th,
+  .stats-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .stats-table th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
