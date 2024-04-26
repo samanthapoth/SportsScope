@@ -10,6 +10,7 @@ from database.connection import Settings
 from app.routes.team_routes import team_router
 from app.routes.game_routes import game_router
 from app.routes.users import user_router
+from app.routes.player_routes import player_router
 
 logger = logging.getLogger(__name__)
 
@@ -49,7 +50,7 @@ app.add_middleware(
 app.include_router(user_router, prefix="/users")
 app.include_router(game_router, prefix="/games")
 app.include_router(team_router, prefix="/teams")
-
+app.include_router(player_router, prefix="/players")
 
 @app.get("/")
 async def home():

@@ -17,3 +17,19 @@ class Player(Document):
         )
     class Settings:
         name = "player"
+        
+class PlayerUpdate(Document):
+    name: str
+    age: int
+    position: str
+    model_config = ConfigDict(
+            json_schema_extra={
+                "example": {
+                    "name": "Henry Leaders",
+                    "age": 22,
+                    "position": "SF"
+                }
+            }
+        )
+    class Settings:
+        name = "player"

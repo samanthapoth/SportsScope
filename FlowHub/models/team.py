@@ -1,11 +1,12 @@
 from typing import Optional
 from beanie import Document, Indexed
 from pydantic import BaseModel, Field,  ConfigDict
+from models.player import Player
 
 class Team(Document):
     name: str = ""
     logo: str = ""
-    players: list[str] = []
+    players: list[Player] = []
     location: str = ""
 
     model_config = ConfigDict(
@@ -14,11 +15,28 @@ class Team(Document):
                 "name": "Project 1 Presentation",
                 "logo": "https://placehold.co/600x400?text=Project+1+Presentation",
                 "players": [
-                    "Henry Leaders",
-                    "Taylor Micetich",
-                    "Samantha Pothitakis",
+                    {
+                    "name": "Henry Leaders",
+                    "age": 22,
+                    "position": "SF"
+                    },
+                    {
+                    "name": "Samantha",
+                    "age": 22,
+                    "position": "C"
+                    },
+                    {
+                    "name": "Alan",
+                    "age": 22,
+                    "position": "SG"
+                    },
+                    {
+                    "name": "Taylor",
+                    "age": 22,
+                    "position": "PF"
+                    },
                 ],
-                "location": "Iowa City",
+                "location": "Iowa City"
             }
         }
     )
@@ -26,7 +44,7 @@ class Team(Document):
 class TeamUpdate(BaseModel):
     name: str = ""
     logo: str = ""
-    players: list[str] = []
+    players: list[Player] = []
     location: str = ""
 
     model_config = ConfigDict(
@@ -35,11 +53,28 @@ class TeamUpdate(BaseModel):
                 "name": "Project 1 Presentation",
                 "logo": "https://placehold.co/600x400?text=Project+1+Presentation",
                 "players": [
-                    "Henry Leaders",
-                    "Taylor Micetich",
-                    "Samantha Pothitakis",
+                    {
+                    "name": "Henry Leaders",
+                    "age": 22,
+                    "position": "SF"
+                    },
+                    {
+                    "name": "Samantha",
+                    "age": 22,
+                    "position": "C"
+                    },
+                    {
+                    "name": "Alan",
+                    "age": 22,
+                    "position": "SG"
+                    },
+                    {
+                    "name": "Taylor",
+                    "age": 22,
+                    "position": "PF"
+                    },
                 ],
-                "location": "Iowa City",
+                "location": "Iowa City"
             }
         }
     )
