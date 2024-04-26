@@ -1,6 +1,6 @@
 import logging
-from auth.hash_password import HashPassword
-from auth.jwt_handler import create_access_token
+from app.auth.hash_password import HashPassword
+from app.auth.jwt_handler import create_access_token
 from database.connection import Database
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordRequestForm

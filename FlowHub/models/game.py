@@ -1,7 +1,7 @@
 from typing import Optional
 from beanie import Document, Indexed
 from pydantic import BaseModel, Field
-from team import Team
+from models.team import Team
 
 class Game(Document):
     home_team: Team

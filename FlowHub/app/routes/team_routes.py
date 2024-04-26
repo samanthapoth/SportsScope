@@ -1,5 +1,5 @@
 import logging
-from auth.authenticate import authenticate
+from app.auth.authenticate import authenticate
 from beanie import PydanticObjectId
 from database.connection import Database
 from fastapi import APIRouter, Depends, HTTPException, status
@@ -33,13 +33,22 @@ async def retrieve_team(id: PydanticObjectId) -> Team:
 
 
 @team_router.post("/new")
+async def create_team(body: Team) -> dict:
+    
+    #logger.info(f"User [{user}] is creating an team.")
+    id = await team_database.save(body)
+    logger.info(f"\t A new team #[{id}] created.")
+    return {"message": "Team created successfully"}
+
+'''
+@team_router.post("/new")
 async def create_team(body: Team, user: str = Depends(authenticate)) -> dict:
     body.creator = user
     logger.info(f"User [{user}] is creating an team.")
     id = await team_database.save(body)
     logger.info(f"\t A new team #[{id}] created.")
     return {"message": "Team created successfully"}
-
+'''
 
 @team_router.put("/{id}", response_model=Team)
 async def update_team(

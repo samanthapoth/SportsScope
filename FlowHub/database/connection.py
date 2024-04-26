@@ -12,15 +12,16 @@ from pydantic import BaseModel, Field
 
 
 class Settings(BaseSettings):
-    DATABASE_URL: str = Field(default="")
-    SECRET_KEY: str = Field(default="")
+    DATABASE_URL: str = Field(default="SportsScope")
+    #SECRET_KEY: str = Field(default="")
 
     model_config = SettingsConfigDict(env_file=".env")
 
     async def initialize_database(self):
-        client = AsyncIOMotorClient(self.DATABASE_URL)
+        client = AsyncIOMotorClient(self.DATABASE_URL)        
+        #client = AsyncIOMotorClient("mongodb+srv://henryalead:EQLQiJeAB6gGlpgH@cluster0.ual0joz.mongodb.net/")
         await init_beanie(
-            database=client.get_default_database(), document_models=[User, Player, Game,Team]
+            database=client.get_default_database("SportsScope"), document_models=[User, Player, Game,Team]
         )
 
 
