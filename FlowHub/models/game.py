@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field
 from models.team import Team
 
 class Game(Document):
+    name: str
     location: str
     home_team: Team
     away_team: Team
@@ -17,6 +18,7 @@ class Game(Document):
         name = "game"
 
 class GameUpdate(BaseModel):
+    name: str
     location: str
     home_team: Team
     away_team: Team

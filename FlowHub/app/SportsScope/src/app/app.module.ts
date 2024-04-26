@@ -9,6 +9,10 @@ import { RegisterComponent } from './register/register.component'; // Import Reg
 import { PlayersComponent } from './players/players.component';
 import { TeamsComponent } from './teams/teams.component';
 import { GamesComponent } from './games/games.component';
+import { AddTeamDialogComponent } from './teams/add-team-dialog/add-team-dialog.component';
+import { MaterialModule } from './material.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { TeamsService } from './services/teams.service';  // Import the service
 
 const appRoutes: Routes = [
   { path: 'players', component: PlayersComponent },
@@ -25,7 +29,8 @@ const appRoutes: Routes = [
     RegisterComponent, // Include RegisterComponent in declarations
     PlayersComponent,
     TeamsComponent,
-    GamesComponent
+    GamesComponent,
+    AddTeamDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -33,9 +38,11 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only
-    )
+    ),
+    MaterialModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [TeamsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 // team.model.ts
 export interface Team {
+  id: string;
   name: string;
   logo: string;
   players: string[];
@@ -7,6 +8,7 @@ export interface Team {
 }
 
 export interface TeamUpdate {
+  id: string;
   name: string;
   logo: string;
   players: string[];

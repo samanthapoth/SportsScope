@@ -124,3 +124,10 @@ body {
     background-color: #f2f2f2;
     color: #333;
   }
+  .custom-dialog-container {
+    position: fixed; /* Position the dialog container relative to the viewport */
+    top: 0px; /* Adjust the top position as needed */
+    left: 50%; /* Center the dialog horizontally */
+    transform: translateX(50%); /* Adjust the horizontal position */
+    padding-top: 20px; /* Adjust this value as needed */
+  }
