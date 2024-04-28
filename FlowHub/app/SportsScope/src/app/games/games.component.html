@@ -1,1 +1,66 @@
-<p>games works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="games.component.css">
+    <script src="games.component.ts"></script>
+    <title>SportScope Calendar</title>
+</head>
+<body>
+    <div class="title-container">
+        <h1>SportScope Calendar</h1>
+    </div>
+
+    <!-- Button to open the event form popup -->
+    <button id="myBtn">Add Event</button>
+
+    <!-- Button to clear all events -->
+    <button id="clearEventsBtn">Clear All Events</button>
+
+    <!-- The Modal for adding events -->
+    <div id="eventFormPopup" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="eventForm">
+                <input type="text" id="eventName" placeholder="Event Name" required><br>
+                <input type="text" id="location" placeholder="Location" required><br>
+                <input type="text" id="home_team" placeholder="Home Team" required><br>
+                <input type="text" id="away_team" placeholder="Away Team" required><br>
+                <input type="date" id="date" name="date" required><br>
+                <input type="time" id="time" required><br>
+                <input type="number" id="home_team_score" placeholder="Home Team Score"><br>
+                <input type="number" id="away_team_score" placeholder="Away Team Score"><br>
+                <button type="submit">Add Event</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Month Navigation -->
+    <div id="monthNavigation">
+        <button id="prevMonth">&#10094;</button>
+        <span id="currentMonth"></span>
+        <button id="nextMonth">&#10095;</button>
+    </div>
+
+    <!-- Calendar Display -->
+    <div id="weekdays">
+        <div class="weekday">Sun</div>
+        <div class="weekday">Mon</div>
+        <div the="weekday">Tue</div>
+        <div class="weekday">Wed</div>
+        <div class="weekday">Thu</div>
+        <div class="weekday">Fri</div>
+        <div class="weekday">Sat</div>
+    </div>
+    <div id="calendar"></div>
+
+    <!-- The Modal for showing event descriptions -->
+    <div id="eventDescriptionPopup" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="eventDescription"></p>
+            <button id="removeItemBtn">Remove</button>
+        </div>
+    </div>
+</body>
+</html>
