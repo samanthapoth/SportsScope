@@ -1,0 +1,33 @@
+<!-- teams.component.html -->
+<div class="teams-container">
+  <h2>Teams</h2>
+  <div class="action-buttons">
+    <button class="add-team-button" (click)="openAddTeamDialog()">Add New Team</button>
+    <!-- New button for downloading logs -->
+    <button class="download-logs-button" (click)="downloadLogs()">Download Logs</button>
+  </div>
+  <div class="table-container">
+    <table class="stats-table">
+      <thead>
+        <tr>
+          <th>Team Name</th>
+          <th>Logo</th>
+          <th>Players</th>
+          <th>Location</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let team of teams">
+          <td>{{ team.name }}</td>
+          <td><img [src]="team.logo" alt="Team Logo" class="logo-image" style="width: 50px; height: auto;"></td>
+          <td>{{ team.players.length }} Players</td>
+          <td>{{ team.location }}</td>
+          <td>
+            <button (click)="navigateToPlayers(team.id)">View Players</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
