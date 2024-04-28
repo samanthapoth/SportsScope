@@ -11,8 +11,11 @@ from app.routes.team_routes import team_router
 from app.routes.game_routes import game_router
 from app.routes.users import user_router
 from app.routes.player_routes import player_router
+from logging_setup import setup_logging
 
+setup_logging()
 logger = logging.getLogger(__name__)
+
 
 
 @asynccontextmanager
