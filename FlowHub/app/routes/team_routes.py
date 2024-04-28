@@ -2,7 +2,8 @@ import logging
 from app.auth.authenticate import authenticate
 from beanie import PydanticObjectId
 from database.connection import Database
-from fastapi import APIRouter, Depends, HTTPException, status, Response
+from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi.responses import StreamingResponse
 from models.team import Team, TeamUpdate
 from app.routes import player_routes
 import csv
@@ -35,37 +36,34 @@ async def retrieve_team(id: PydanticObjectId) -> Team:
     return team
 
 
-@team_router.get("/{id}/csv", response_model=Team)
-async def retrieve_team_csv(id: PydanticObjectId) -> Response:
-    logger.info(f"Viewing team #{id} details.")
-    team = await team_database.get(id)
-    if not team:
-        logger.warning(f"The team #{id} NOT Found.")
+@team_router.get("/{id}/csv", response_class=StreamingResponse)
+async def team_csv(id: str, team: Team = Depends(retrieve_team)):
+    logger.info(f"Exporting team #{id} details as CSV.")
+    if not team.players:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Team with supplied ID does not exist",
+            detail="No players found in the team.",
         )
-    
-    # Convert team object to CSV format
-    csv_data = team_to_csv(team)
 
-    # Create CSV response
-    response = Response(content=csv_data, media_type="text/csv")
-    response.headers["Content-Disposition"] = f"attachment; filename=team_{id}.csv"
+    csv_data = []
+    fieldnames = ["Name", "Age", "Position"]
+
+    for player in team.players:
+        csv_data.append({
+            "Name": player.name,
+            "Age": player.age,
+            "Position": player.position
+        })
+
+    async def generate_csv():
+        yield ','.join(fieldnames) + '\n'
+        for player in csv_data:
+            yield ','.join(str(player[field]) for field in fieldnames) + '\n'
+
+    response = StreamingResponse(content=generate_csv(), media_type="text/csv")
+    response.headers["Content-Disposition"] = f"attachment; filename=team_{id}_players.csv"
+
     return response
-
-def team_to_csv(team: Team) -> str:
-    output = StringIO()
-    writer = csv.DictWriter(output, fieldnames=["name", "logo", "players", "location"])
-    writer.writeheader()
-    writer.writerow({
-        "name": team.name,
-        "logo": team.logo,
-        "players": ", ".join([f"{player.name} ({player.age}, {player.position})" for player in team.players]),
-        "location": team.location
-    })
-    return output.getvalue()
-
 
 @team_router.post("/new")
 async def create_team(body: Team) -> dict:
