@@ -6,8 +6,8 @@ from models.team import Team
 class Game(Document):
     name: str
     location: str
-    home_team: Team
-    away_team: Team
+    home_team: str
+    away_team: str
     date: str
     time: str
     played: bool = Field(default=False)
@@ -20,8 +20,8 @@ class Game(Document):
 class GameUpdate(BaseModel):
     name: str
     location: str
-    home_team: Team
-    away_team: Team
+    home_team: str
+    away_team: str
     date: str
     time: str
     played: bool = Field(default=False)
