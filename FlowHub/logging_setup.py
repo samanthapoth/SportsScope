@@ -4,7 +4,7 @@ from logging import StreamHandler, basicConfig, INFO
 
 def setup_logging():
     console_log = StreamHandler()
-    file_log = TimedRotatingFileHandler("./FlowHub/logs/app.log", when="d", interval=1)
+    file_log = TimedRotatingFileHandler("./logs/app.log", when="d", interval=1)
     basicConfig(
         level=INFO,
         format="%(asctime)s %(levelname).4s %(name)s:%(lineno)d %(message)s",

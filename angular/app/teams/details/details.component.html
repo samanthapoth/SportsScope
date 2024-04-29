@@ -1,0 +1,154 @@
+<!-- This is the HTML template for the details component. -->
+<div class="heading mt-2">
+  <a routerLink=".." class="btn btn-secondary"> Back to Team List </a>
+</div>
+
+<section *ngIf="loading" class="d-flex justify-content-center my-5">
+  <uiowa-ring></uiowa-ring>
+</section>
+
+<section *ngIf="!loading" class="container d-flex flex-column my-3">
+  <ng-container *ngIf="!details">
+    <div class="bg-danger p-3 text-center">
+      <p class="h4">Team [{{ id }}] Not Found.</p>
+    </div>
+  </ng-container>
+
+  <div id="record-details" *ngIf="details">
+    <div class="d-flex justify-content-center align-items-center call-out">
+      <div class="h2 fw-bold me-2">Team ID: {{ id }}</div>
+    </div>
+    <div class="d-flex justify-content-center my-3" style="width: 50 px; height: auto;">
+      <img class="imagesize" [src]="details.logo"/>
+    </div>
+    <section class="ps-3">
+      <div class="my-2">
+        <div class="fw-bold fs-5">Name</div>
+        <div class="ps-3">{{ details.name }}</div>
+      </div>
+      <div class="my-2">
+        <div class="fw-bold fs-5">Creator</div>
+        <div class="ps-3">{{ details.creator }}</div>
+      </div>
+      <div class="my-2">
+        <div class="fw-bold fs-5">Players</div>
+        <div class="ps-3">
+          <span
+            *ngFor="let t of details.players"
+            class="badge text-bg-secondary me-1"
+          >
+            {{ t }}
+          </span>
+        </div>
+      </div>
+      <div class="my-2">
+        <div class="fw-bold fs-5">Location</div>
+        <div class="ps-3">{{ details.location }}</div>
+      </div>
+    </section>
+    <div class="ps-3 mt-3">
+      <button
+        *ngIf="canUpdate"
+        type="button"
+        class="btn btn-warning"
+        (click)="open(updateDialog)"
+      >
+        Update
+      </button>
+    </div>
+  </div>
+</section>
+
+<ng-template #updateDialog let-modal>
+  <div class="modal-header bg-warning">
+    <h4 class="modal-title" id="modal-title">Update Team [{{ id }}]</h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss()"
+    ></button>
+  </div>
+  <div class="modal-body p-3">
+    <div class="mb-2">
+      <label for="title" class="fw-bold">Name</label>
+      <input type="text" class="form-control" id="title" [(ngModel)]="name" />
+    </div>
+    <div class="mb-2">
+      <label for="logo" class="fw-bold">Logo</label>
+      <input type="text" class="form-control" id="logo" [(ngModel)]="logo" />
+    </div>
+    <div class="mb-2">
+      <label for="location" class="fw-bold">Location</label>
+      <input
+        type="text"
+        class="form-control"
+        id="location"
+        [(ngModel)]="location"
+      />
+    </div>
+    <div class="mb-2">
+      <div class="fw-bold">Players</div>
+      <div *ngFor="let t of players" class="ps-3 mb-1">
+        {{ t }}
+        <button class="btn btn-sm btn-danger py-0 px-1" (click)="removePlayer(t)">
+          X
+        </button>
+      </div>
+      <hr class="ms-3 w-25" />
+      <div class="ps-3 d-flex">
+        <input
+          type="text"
+          class="form-control me-2"
+          style="max-width: 150px"
+          #nt
+        />
+        <button class="btn btn-sm btn-success" (click)="addPlayer(nt.value)">
+          +
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-dark me-2"
+      (click)="modal.close()"
+    >
+      Cancel
+    </button>
+    <button
+      type="button"
+      class="btn btn-warning"
+      (click)="update(updateFinishDialog)"
+      [disabled]="busy"
+    >
+      <span *ngIf="!busy">Update</span>
+      <loading-bar *ngIf="busy">Updating...</loading-bar>
+    </button>
+  </div>
+</ng-template>
+
+<ng-template #updateFinishDialog let-modal>
+  <div class="modal-header bg-warning">
+    <h4 class="modal-title" id="modal-title">
+      Successfully Updated Team [{{ id }}]
+    </h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss()"
+    ></button>
+  </div>
+  <div class="modal-body p-3">The team has been updated.</div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-dark me-2"
+      (click)="modal.close()"
+    >
+      Close
+    </button>
+  </div>
+</ng-template>

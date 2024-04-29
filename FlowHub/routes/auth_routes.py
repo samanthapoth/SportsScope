@@ -15,9 +15,9 @@ def logout():
     # Handle logout
     return redirect(url_for('auth.login'))
 
-@bp.route('/register', methods=['GET', 'POST'])
+@bp.route('/signup', methods=['GET', 'POST'])
 def register():
     if request.method == 'POST':
         # Handle registration
         pass
-    return render_template('register.html')
+    return render_template('signup.html')

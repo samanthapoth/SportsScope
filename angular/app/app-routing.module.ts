@@ -17,9 +17,9 @@ const routes: Routes = [
   { path: 'signup', component: SignUpComponent },
   { path: 'games', component: GamesComponent },
   {
-    path: 'events',
+    path: 'teams',
     loadChildren: () =>
-      import('./events/events.module').then((m) => m.EventsModule),
+      import('./teams/teams.module').then((m) => m.TeamsModule),
     canMatch: [authGuard],
   },
   {

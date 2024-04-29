@@ -22,7 +22,7 @@ import { AuthService } from './core';
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item" routerLinkActive="active">
-              <a class="nav-link" routerLink="events">Teams</a>
+              <a class="nav-link" routerLink="teams">Teams</a>
             </li>
             <li class="nav-item" routerLinkActive="active">
               <a class="nav-link" routerLink="admin">Admin</a>

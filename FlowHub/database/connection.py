@@ -21,7 +21,7 @@ class Settings(BaseSettings):
         client = AsyncIOMotorClient(self.DATABASE_URL)        
         #client = AsyncIOMotorClient("mongodb+srv://henryalead:EQLQiJeAB6gGlpgH@cluster0.ual0joz.mongodb.net/")
         await init_beanie(
-            database=client.get_default_database("SportsScope"), document_models=[User, Player, Game,Team]
+            database=client.get_default_database("SportsScope"), document_models=[User, Player, Game, Team]
         )
 
 
