@@ -1,0 +1,17 @@
+<h2>{{ team ? team.name : '' }}</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Position</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let player of players">
+      <td>{{ player.name }}</td>
+      <td>{{ player.age }}</td>
+      <td>{{ player.position }}</td>
+    </tr>
+  </tbody>
+</table>
