@@ -8,6 +8,7 @@ import { TeamsComponent } from './teams/teams.component';
 const routes: Routes = [
   { path: 'teams', component: TeamsComponent },
   { path: 'players/:teamId', component: PlayersComponent },  // Confirm this is defined correctly
+  { path: 'games', component: GamesComponent }, 
   { path: '', redirectTo: '/teams', pathMatch: 'full' }  // Redirect to teams by default
 ];
 
