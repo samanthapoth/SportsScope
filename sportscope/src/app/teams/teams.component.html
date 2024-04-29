@@ -20,7 +20,7 @@
       <tbody>
         <tr *ngFor="let team of teams">
           <td>{{ team.name }}</td>
-          <td><img [src]="team.logo" alt="Team Logo" class="logo-image"></td>
+          <td><img [src]="team.logo" alt="Team Logo" class="logo-image" style="width: 50px; height: auto;"></td>
           <td>{{ team.players.length }} Players</td>
           <td>{{ team.location }}</td>
           <td>
