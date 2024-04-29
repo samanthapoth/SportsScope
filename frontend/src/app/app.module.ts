@@ -22,6 +22,7 @@ const appRoutes: Routes = [
   { path: 'teams', component: TeamsComponent },
   { path: 'login', component: LoginComponent }, // Include LoginComponent in routes
   { path: 'register', component: RegisterComponent }, // Include RegisterComponent in routes
+  { path: 'games', component: GamesComponent}, 
   { path: '', redirectTo: '/players', pathMatch: 'full' },
 ];
 
