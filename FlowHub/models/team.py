@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field,  ConfigDict
 from models.player import Player
 
 class Team(Document):
+    creator: str = ""
     name: str = ""
     logo: str = ""
     players: list[Player] = []

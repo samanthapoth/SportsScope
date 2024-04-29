@@ -4,6 +4,7 @@ from pydantic import BaseModel, Field
 from models.team import Team
 
 class Game(Document):
+    creator: str
     name: str
     location: str
     home_team: str
