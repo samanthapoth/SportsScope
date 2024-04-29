@@ -13,7 +13,7 @@ from pydantic import BaseModel, Field
 
 class Settings(BaseSettings):
     DATABASE_URL: str = Field(default="SportsScope")
-    #SECRET_KEY: str = Field(default="")
+    SECRET_KEY: str = Field(default="")
 
     model_config = SettingsConfigDict(env_file=".env")
 

@@ -66,9 +66,9 @@ async def team_csv(id: str, team: Team = Depends(retrieve_team)):
     return response
 
 @team_router.post("/new")
-async def create_team(body: Team) -> dict:
+async def create_team(body: Team, user: str = Depends(authenticate)) -> dict:
     
-    #logger.info(f"User [{user}] is creating an team.")
+    logger.info(f"User [{user}] is creating an team.")
     for i in body.players:
         i = await player_routes.create_player(i)
     id = await team_database.save(body)

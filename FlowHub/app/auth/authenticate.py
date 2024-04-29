@@ -3,7 +3,7 @@ from app.auth.jwt_handler import verify_access_token
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/user/sign-in")
+oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/users/sign-in")
 
 
 async def authenticate(token: str = Depends(oauth2_scheme)) -> str:
