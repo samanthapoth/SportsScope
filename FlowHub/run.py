@@ -57,7 +57,7 @@ app.include_router(player_router, prefix="/players")
 
 @app.get("/")
 async def home():
-    return RedirectResponse(url="/games/")
+    return RedirectResponse(url="/teams/")
 
 
 if __name__ == "__main__":

@@ -62,3 +62,18 @@
 2024-04-28 19:01:51,808 WARN app.routes.users:48 	 User [python-web-dev@cs.uiowa.edu] signed in
 2024-04-28 21:19:11,996 INFO run:24 Application starts up...
 2024-04-28 21:19:26,574 INFO routes.team_routes:22 viewing 8 team
+2024-04-28 21:35:03,735 INFO run:24 Application starts up...
+2024-04-28 21:47:03,531 INFO routes.team_routes:22 viewing 0 team
+2024-04-28 21:47:39,810 INFO routes.team_routes:22 viewing 0 team
+2024-04-28 21:47:42,898 INFO routes.team_routes:22 viewing 0 team
+2024-04-28 21:47:43,075 INFO routes.team_routes:22 viewing 0 team
+2024-04-28 21:48:32,388 INFO routes.team_routes:22 viewing 0 team
+2024-04-28 21:49:29,273 INFO routes.team_routes:22 viewing 0 team
+2024-04-28 21:49:31,064 INFO routes.team_routes:22 viewing 0 team
+2024-04-28 21:49:31,179 INFO routes.team_routes:22 viewing 0 team
+2024-04-28 21:49:44,587 INFO run:24 Application starts up...
+2024-04-28 21:51:14,555 INFO run:24 Application starts up...
+2024-04-28 21:51:16,900 INFO routes.game_routes:18 viewing 0 games
+2024-04-28 21:51:23,508 INFO routes.game_routes:18 viewing 0 games
+2024-04-28 21:51:34,999 INFO run:24 Application starts up...
+2024-04-28 21:51:39,270 INFO routes.team_routes:22 viewing 8 team
