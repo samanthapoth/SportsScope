@@ -7,10 +7,10 @@ from fastapi.responses import RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 
 from database.connection import Settings
-from app.routes.team_routes import team_router
-from app.routes.game_routes import game_router
-from app.routes.users import user_router
-from app.routes.player_routes import player_router
+from routes.team_routes import team_router
+from routes.game_routes import game_router
+from routes.users import user_router
+from routes.player_routes import player_router
 from logging_setup import setup_logging
 
 setup_logging()
