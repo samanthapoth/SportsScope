@@ -1,26 +1,18 @@
 <div class="title-container">
-    <h1>SportScope Calendar</h1>
 </div>
-
-<!-- Button to open the event form popup -->
-<button (click)="openEventForm()">Add Event</button>
-
-<!-- The Modal for adding events -->
-<div *ngIf="showEventForm" id="eventFormPopup" class="modal">
-    <div class="modal-content">
-        <span class="close" (click)="closeEventForm()">&times;</span>
-        <form (submit)="addEvent($event)">
-            <input type="text" id="eventName" placeholder="Event Name" required>
-            <input type="text" id="location" placeholder="Location" required>
-            <input type="text" id="home_team" placeholder="Home Team" required>
-            <input type="text" id="away_team" placeholder="Away Team" required>
-            <input type="date" id="date" name="date" required>
-            <input type="time" id="time" required>
-            <input type="number" id="home_team_score" placeholder="Home Team Score">
-            <input type="number" id="away_team_score" placeholder="Away Team Score">
-            <button type="submit">Add Event</button>
-        </form>
-    </div>
+<!-- Embedded Event Form -->
+<div class="event-form-container">
+    <form #eventForm="ngForm" (ngSubmit)="addEvent(eventForm)">
+        <input type="text" id="eventName" name="eventName" [(ngModel)]="newGame.name" placeholder="Event Name" required>
+        <input type="text" id="location" name="location" [(ngModel)]="newGame.location" placeholder="Location" required>
+        <input type="text" id="home_team" name="home_team" [(ngModel)]="newGame.homeTeam" placeholder="Home Team" required>
+        <input type="text" id="away_team" name="away_team" [(ngModel)]="newGame.awayTeam" placeholder="Away Team" required>
+        <input type="date" id="date" name="date" [(ngModel)]="newGame.date" required>
+        <input type="time" id="time" name="time" [(ngModel)]="newGame.time" required>
+        <input type="number" id="home_team_score" name="home_team_score" [(ngModel)]="newGame.homeTeamScore" placeholder="Home Team Score">
+        <input type="number" id="away_team_score" name="away_team_score" [(ngModel)]="newGame.awayTeamScore" placeholder="Away Team Score">
+        <button type="submit">Add Event</button>
+    </form>
 </div>
 
 <!-- Month Navigation -->
@@ -31,23 +23,40 @@
 </div>
 
 <!-- Calendar Display -->
+<!-- Calendar Display -->
+<!-- Calendar Display -->
+<!-- Calendar Display -->
 <div id="weekdays">
     <div class="weekday" *ngFor="let day of ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']">{{ day }}</div>
 </div>
 <div id="calendar">
     <div *ngFor="let day of days" class="day">
         <div *ngIf="day.date">{{ day.date }}</div>
-        <div *ngFor="let event of day.events" class="event">
-            {{ event.name }}
+        <div *ngFor="let event of day.events" class="event" (click)="selectEvent(event)">
+            <div class="event-title">{{ event.name }}</div>
+            <div class="event-teams">
+                {{ event.home_team }} vs {{ event.away_team }}
+            </div>
+            <div class="event-details" *ngIf="event.played">
+                Score: {{ event.home_team_score }} - {{ event.away_team_score }}
+            </div>
+            <div class="event-time" *ngIf="!event.played">
+                Time: {{ event.time }}
+            </div>
         </div>
     </div>
 </div>
-
 <!-- The Modal for showing event descriptions -->
 <div *ngIf="showEventDetails" id="eventDescriptionPopup" class="modal">
     <div class="modal-content">
         <span class="close" (click)="closeEventDetails()">&times;</span>
-        <!-- <p>{{ selectedEventDescription }}</p> -->
-        <button (click)="removeEvent(selectedEvent)">Remove</button>
+        <h2>{{ selectedEvent?.name }}</h2>
+        <p><strong>Date:</strong> {{ selectedEvent?.date | date:'fullDate' }}</p>
+        <p><strong>Time:</strong> {{ selectedEvent?.time }}</p>
+        <p><strong>Location:</strong> {{ selectedEvent?.location }}</p>
+        <p><strong>Teams:</strong> {{ selectedEvent?.homeTeam }} vs {{ selectedEvent?.awayTeam }}</p>
+        <p *ngIf="selectedEvent?.played"><strong>Score:</strong> {{ selectedEvent?.homeTeamScore }} - {{ selectedEvent?.awayTeamScore }}</p>
+        <p *ngIf="!selectedEvent?.played"><strong>Status:</strong> Scheduled</p>
+        <button (click)="removeEvent(selectedEvent)">Remove Event</button>
     </div>
 </div>

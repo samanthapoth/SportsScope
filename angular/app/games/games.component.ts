@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { GamesService } from './games.service';
 import { Game } from './game.model';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-games',
@@ -13,8 +15,19 @@ export class GamesComponent implements OnInit {
   showEventForm: boolean = false;
   showEventDetails: boolean = false;
   selectedEvent: Game | null = null;
+  newGame: Game = {
+    name: '',
+    location: '',
+    homeTeam: '',
+    awayTeam: '',
+    date: '',
+    time: '',
+    played: false,
+    homeTeamScore: 0,
+    awayTeamScore: 0
+  };
 
-  constructor(private gamesService: GamesService) {}
+  constructor(private cdr: ChangeDetectorRef, private gamesService: GamesService) {}
 
   ngOnInit(): void {
     this.loadMonth(new Date());
@@ -30,43 +43,54 @@ export class GamesComponent implements OnInit {
   openEventForm() {
     this.showEventForm = true;
   }
-  clearAllEvents() {
-    // Assuming your backend has an endpoint to clear all games, which is unlikely, this is hypothetical
-    // If there is no such API, you might need to fetch all games, loop through them, and delete one by one
-    console.log("Clear all events functionality is not implemented");
-  }
   
   changeMonth(offset: number) {
-    const current = new Date(this.currentMonth);
+    const current = new Date(this.currentMonth + " 1");
     current.setMonth(current.getMonth() + offset);
     this.loadMonth(current);
+    this.cdr.detectChanges();
   }
 
   loadMonth(date: Date) {
     this.currentMonth = date.toLocaleString('default', { month: 'long', year: 'numeric' });
     const firstDayOfMonth = new Date(date.getFullYear(), date.getMonth(), 1).getDay();
     const daysInMonth = new Date(date.getFullYear(), date.getMonth() + 1, 0).getDate();
-
+  
     this.days = Array(daysInMonth).fill(null).map((_, i) => ({
       date: i + 1,
       events: []
     }));
-
+  
+    // Adjust for starting day of the week
     for (let i = 0; i < firstDayOfMonth; i++) {
-      this.days.unshift({ date: null, events: [] }); // placeholders for empty days at the start
+      this.days.unshift({ date: null, events: [] });
     }
-
-    this.fetchEvents(firstDayOfMonth);
+  
+    this.fetchEvents(); // Fetch events whenever month is loaded/changed
   }
 
-  fetchEvents(firstDayOfMonth: number) {
+  selectEvent(event: Game) {
+    console.log("Event selected, attempting to show modal");
+    this.selectedEvent = event;
+    this.showEventDetails = true;  // Assuming you toggle visibility of details with this flag
+    this.cdr.detectChanges();
+}
+
+  fetchEvents() {
     this.gamesService.getAllGames().subscribe({
       next: (games) => {
+        const monthStart = new Date(this.currentMonth + " 1");
+        const firstDayOfMonth = monthStart.getDay();
+        this.days.forEach(day => day.events = []); // Clear previous events
+  
         games.forEach(game => {
           const gameDate = new Date(game.date);
-          const index = gameDate.getDate() + firstDayOfMonth - 1; // index correction for the calendar
-          if (index >= 0 && index < this.days.length) {
-            this.days[index].events.push(game);
+          // Ensure only adding events of the current month
+          if (gameDate.getMonth() === monthStart.getMonth() && gameDate.getFullYear() === monthStart.getFullYear()) {
+            const index = gameDate.getDate() + firstDayOfMonth; // Adjust index to zero-based
+            if (index >= 0 && index < this.days.length) {
+              this.days[index].events.push(game);
+            }
           }
         });
       },
@@ -74,41 +98,32 @@ export class GamesComponent implements OnInit {
     });
   }
 
-  addEvent(form: any) {
-    const game: Game = {
-      name: form.value.eventName,
-      location: form.value.location,
-      homeTeam: form.value.home_team,
-      awayTeam: form.value.away_team,
-      date: form.value.date,
-      time: form.value.time,
-      played: false,
-      homeTeamScore: form.value.home_team_score || 0,
-      awayTeamScore: form.value.away_team_score || 0
-    };
-  
-    this.gamesService.createGame(game).subscribe({
-      next: () => {
-        this.fetchEvents(new Date().getDay()); // Refresh events on successful addition
-        this.closeEventForm(); // Close the form on success
-      },
-      error: (err) => {
-        console.error('Error adding game:', err);
-        this.closeEventForm(); // Close the form on error
-      }
-    });
+  addEvent(form: NgForm) {
+    if (form.valid) {
+      this.gamesService.createGame(this.newGame).subscribe({
+        next: () => {
+          this.fetchEvents(); // Refresh events on successful addition
+          form.reset(); // Reset the form after submission
+        },
+        error: (err) => {
+          console.error('Error adding game:', err);
+        }
+      });
+    }
   }
+
   removeEvent(eventId: Game | null) {
-  if (eventId && eventId._id) {
-    this.gamesService.deleteGame(eventId._id).subscribe({
-      next: () => {
-        this.fetchEvents(new Date().getDay());  // Assuming fetchEvents has been adapted to take the day of the week
-        this.closeEventDetails();  // Close details view on success
-      },
-      error: (err) => console.error('Error removing game:', err)
-    });
+    if (eventId && eventId._id) {
+      this.gamesService.deleteGame(eventId._id).subscribe({
+        next: () => {
+          this.fetchEvents();  // Refresh events
+          this.closeEventDetails();  // Close details view on success
+        },
+        error: (err) => console.error('Error removing game:', err)
+      });
+    }
   }
-}
+  
 
   updateEvent(form: any) {
     if (!this.selectedEvent || !this.selectedEvent._id) return;
@@ -128,7 +143,7 @@ export class GamesComponent implements OnInit {
   
     this.gamesService.updateGame(this.selectedEvent._id, updatedGame).subscribe({
       next: () => {
-        this.fetchEvents(new Date().getDay()); // Refresh events on successful update
+        this.fetchEvents(); // Refresh events on successful update
         this.closeEventDetails(); // Close details view on success
       },
       error: (err) => {
@@ -137,6 +152,4 @@ export class GamesComponent implements OnInit {
       }
     });
   }
-
-  // Implement other component methods as needed
 }
