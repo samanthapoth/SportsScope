@@ -193,3 +193,101 @@
 2024-04-29 21:28:00,276 INFO routes.team_routes:22 viewing 8 team
 2024-04-29 21:29:15,910 INFO routes.game_routes:18 viewing 1 games
 2024-04-29 21:29:19,758 INFO routes.game_routes:18 viewing 1 games
+2024-04-29 23:39:09,100 INFO run:24 Application starts up...
+2024-04-29 23:39:33,361 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 23:39:36,335 INFO routes.team_routes:28 viewing team #663074e2261a698aecf10379 details.
+2024-04-29 23:39:37,435 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 23:39:50,203 INFO routes.team_routes:71 User [samantha-pothitakis@uiowa.edu] is creating an team.
+2024-04-29 23:39:50,260 INFO routes.player_routes:41 	 A new player #[66307616ecbeb1beb69aba9a] created.
+2024-04-29 23:39:50,293 INFO routes.player_routes:41 	 A new player #[66307616ecbeb1beb69aba9b] created.
+2024-04-29 23:39:50,329 INFO routes.player_routes:41 	 A new player #[66307616ecbeb1beb69aba9c] created.
+2024-04-29 23:39:50,364 INFO routes.team_routes:75 	 A new team #[66307616ecbeb1beb69aba9d] created.
+2024-04-29 23:39:50,407 INFO routes.team_routes:22 viewing 10 team
+2024-04-29 23:40:05,221 INFO routes.team_routes:116 User [samantha-pothitakis@uiowa.edu] is deleting team #66307616ecbeb1beb69aba9d.
+2024-04-29 23:40:05,321 INFO routes.team_routes:133 	 Team #[66307616ecbeb1beb69aba9d] is deleted.
+2024-04-29 23:40:05,354 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 23:40:22,441 INFO routes.team_routes:71 User [samantha-pothitakis@uiowa.edu] is creating an team.
+2024-04-29 23:40:22,481 INFO routes.player_routes:41 	 A new player #[66307636ecbeb1beb69aba9e] created.
+2024-04-29 23:40:22,513 INFO routes.player_routes:41 	 A new player #[66307636ecbeb1beb69aba9f] created.
+2024-04-29 23:40:22,544 INFO routes.player_routes:41 	 A new player #[66307636ecbeb1beb69abaa0] created.
+2024-04-29 23:40:22,575 INFO routes.team_routes:75 	 A new team #[66307636ecbeb1beb69abaa1] created.
+2024-04-29 23:40:22,612 INFO routes.team_routes:22 viewing 10 team
+2024-04-29 23:40:26,157 INFO routes.team_routes:28 viewing team #66307636ecbeb1beb69abaa1 details.
+2024-04-29 23:42:32,804 INFO routes.team_routes:28 viewing team #66307636ecbeb1beb69abaa1 details.
+2024-04-29 23:42:37,087 INFO routes.team_routes:22 viewing 10 team
+2024-04-29 23:42:40,149 INFO routes.team_routes:28 viewing team #662ee28ac6533bb325e2ff42 details.
+2024-04-29 23:42:41,425 INFO routes.team_routes:22 viewing 10 team
+2024-04-29 23:42:43,062 INFO routes.team_routes:28 viewing team #662ec68d1f8378bf0295eb34 details.
+2024-04-29 23:42:48,035 INFO routes.team_routes:22 viewing 10 team
+2024-04-29 23:42:49,294 INFO routes.team_routes:28 viewing team #66307636ecbeb1beb69abaa1 details.
+2024-04-29 23:43:21,387 INFO routes.team_routes:92 User [samantha-pothitakis@uiowa.edu] is updating team #66307636ecbeb1beb69abaa1.
+2024-04-29 23:43:21,498 INFO routes.team_routes:110 	 Team #[66307636ecbeb1beb69abaa1] is updated.
+2024-04-29 23:43:27,908 INFO routes.team_routes:22 viewing 10 team
+2024-04-29 23:44:20,680 INFO routes.team_routes:22 viewing 10 team
+2024-04-29 23:44:32,831 INFO routes.team_routes:71 User [samantha-pothitakis@uiowa.edu] is creating an team.
+2024-04-29 23:44:32,871 INFO routes.player_routes:41 	 A new player #[66307730ecbeb1beb69abaa2] created.
+2024-04-29 23:44:32,902 INFO routes.player_routes:41 	 A new player #[66307730ecbeb1beb69abaa3] created.
+2024-04-29 23:44:32,933 INFO routes.team_routes:75 	 A new team #[66307730ecbeb1beb69abaa4] created.
+2024-04-29 23:44:32,970 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:44:57,499 INFO routes.team_routes:71 User [samantha-pothitakis@uiowa.edu] is creating an team.
+2024-04-29 23:44:57,547 INFO routes.player_routes:41 	 A new player #[66307749ecbeb1beb69abaa5] created.
+2024-04-29 23:44:57,580 INFO routes.player_routes:41 	 A new player #[66307749ecbeb1beb69abaa6] created.
+2024-04-29 23:44:57,612 INFO routes.team_routes:75 	 A new team #[66307749ecbeb1beb69abaa7] created.
+2024-04-29 23:44:57,650 INFO routes.team_routes:22 viewing 12 team
+2024-04-29 23:49:04,902 INFO routes.team_routes:22 viewing 12 team
+2024-04-29 23:49:06,858 INFO routes.team_routes:22 viewing 12 team
+2024-04-29 23:49:15,075 INFO routes.team_routes:116 User [samantha-pothitakis@uiowa.edu] is deleting team #66307636ecbeb1beb69abaa1.
+2024-04-29 23:49:15,174 INFO routes.team_routes:133 	 Team #[66307636ecbeb1beb69abaa1] is deleted.
+2024-04-29 23:49:15,212 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:49:15,490 INFO routes.team_routes:116 User [samantha-pothitakis@uiowa.edu] is deleting team #66307730ecbeb1beb69abaa4.
+2024-04-29 23:49:15,590 INFO routes.team_routes:133 	 Team #[66307730ecbeb1beb69abaa4] is deleted.
+2024-04-29 23:49:15,629 INFO routes.team_routes:22 viewing 10 team
+2024-04-29 23:49:16,093 INFO routes.team_routes:116 User [samantha-pothitakis@uiowa.edu] is deleting team #66307749ecbeb1beb69abaa7.
+2024-04-29 23:49:16,186 INFO routes.team_routes:133 	 Team #[66307749ecbeb1beb69abaa7] is deleted.
+2024-04-29 23:49:16,224 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 23:49:29,200 INFO routes.team_routes:71 User [samantha-pothitakis@uiowa.edu] is creating an team.
+2024-04-29 23:49:29,258 INFO routes.player_routes:41 	 A new player #[66307859ecbeb1beb69abaa8] created.
+2024-04-29 23:49:29,293 INFO routes.player_routes:41 	 A new player #[66307859ecbeb1beb69abaa9] created.
+2024-04-29 23:49:29,326 INFO routes.team_routes:75 	 A new team #[66307859ecbeb1beb69abaaa] created.
+2024-04-29 23:49:29,367 INFO routes.team_routes:22 viewing 10 team
+2024-04-29 23:50:22,877 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:50:26,792 INFO routes.team_routes:28 viewing team #663074e2261a698aecf10379 details.
+2024-04-29 23:50:27,752 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:50:28,994 INFO routes.team_routes:116 User [samantha-pothitakis@uiowa.edu] is deleting team #66307859ecbeb1beb69abaaa.
+2024-04-29 23:50:29,091 INFO routes.team_routes:133 	 Team #[66307859ecbeb1beb69abaaa] is deleted.
+2024-04-29 23:50:29,124 INFO routes.team_routes:22 viewing 10 team
+2024-04-29 23:50:58,193 INFO routes.team_routes:71 User [samantha-pothitakis@uiowa.edu] is creating an team.
+2024-04-29 23:50:58,230 INFO routes.player_routes:41 	 A new player #[663078b2ecbeb1beb69abaab] created.
+2024-04-29 23:50:58,262 INFO routes.player_routes:41 	 A new player #[663078b2ecbeb1beb69abaac] created.
+2024-04-29 23:50:58,297 INFO routes.team_routes:75 	 A new team #[663078b2ecbeb1beb69abaad] created.
+2024-04-29 23:50:58,335 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:51:06,343 INFO routes.team_routes:28 viewing team #663078b2ecbeb1beb69abaad details.
+2024-04-29 23:52:05,011 INFO routes.team_routes:92 User [samantha-pothitakis@uiowa.edu] is updating team #663078b2ecbeb1beb69abaad.
+2024-04-29 23:52:05,122 INFO routes.team_routes:110 	 Team #[663078b2ecbeb1beb69abaad] is updated.
+2024-04-29 23:52:11,880 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:53:47,885 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:53:59,126 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:54:06,847 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:54:12,515 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:54:28,854 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:55:25,878 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:55:36,340 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:55:44,640 INFO routes.team_routes:22 viewing 11 team
+2024-04-29 23:56:06,780 INFO routes.team_routes:116 User [samantha-pothitakis@uiowa.edu] is deleting team #663078b2ecbeb1beb69abaad.
+2024-04-29 23:56:06,874 INFO routes.team_routes:133 	 Team #[663078b2ecbeb1beb69abaad] is deleted.
+2024-04-29 23:56:06,907 INFO routes.team_routes:22 viewing 10 team
+2024-04-29 23:56:31,324 INFO routes.team_routes:22 viewing 0 team
+2024-04-29 23:56:52,350 INFO routes.team_routes:71 User [samantha-pothitakis@uiowa.edu] is creating an team.
+2024-04-29 23:56:52,403 INFO routes.player_routes:41 	 A new player #[66307a14ecbeb1beb69abaae] created.
+2024-04-29 23:56:52,436 INFO routes.player_routes:41 	 A new player #[66307a14ecbeb1beb69abaaf] created.
+2024-04-29 23:56:52,469 INFO routes.team_routes:75 	 A new team #[66307a14ecbeb1beb69abab0] created.
+2024-04-29 23:56:52,521 INFO routes.team_routes:22 viewing 1 team
+2024-04-29 23:56:54,463 INFO routes.team_routes:28 viewing team #66307a14ecbeb1beb69abab0 details.
+2024-04-29 23:57:05,518 INFO routes.team_routes:22 viewing 1 team
+2024-04-29 23:57:42,887 INFO routes.team_routes:22 viewing 1 team
+2024-04-29 23:57:44,432 INFO routes.team_routes:28 viewing team #66307a14ecbeb1beb69abab0 details.
+2024-04-29 23:57:49,097 INFO routes.team_routes:28 viewing team #66307a14ecbeb1beb69abab0 details.
+2024-04-29 23:58:27,818 INFO routes.team_routes:28 viewing team #66307a14ecbeb1beb69abab0 details.
+2024-04-29 23:58:29,886 INFO routes.team_routes:28 viewing team #66307a14ecbeb1beb69abab0 details.
+2024-04-29 23:58:44,424 INFO routes.team_routes:22 viewing 1 team
+2024-04-29 23:58:51,706 INFO routes.team_routes:28 viewing team #66307a14ecbeb1beb69abab0 details.

@@ -79,11 +79,6 @@ export class AllComponent implements OnInit {
           };
           this.players.push(player);
         }
-  
-        // Now that all players are processed, you can perform any actions with the players array.
-        alert(this.players.length); // This will now show the correct length
-  
-        // Here you can do further processing with the players array if needed.
       }
     };
     reader.readAsText(file);
@@ -120,7 +115,8 @@ export class AllComponent implements OnInit {
       .subscribe({
         next: (team) => {
           this.teams.push(team);
-          this.open(content);
+        //  this.open(content);
+          this.modalRef?.close();
         },
         error: (error) => {
           console.error('Error creating team:', error);
