@@ -44,7 +44,7 @@ export class GamesComponent implements OnInit {
   openEventForm() {
     this.showEventForm = true;
   }
-  
+
   toggleAddEventModal(): void {
     this.showAddEventModal = !this.showAddEventModal;
   }
@@ -77,7 +77,7 @@ export class GamesComponent implements OnInit {
   selectEvent(event: Game) {
     console.log("Event selected, attempting to show modal");
     this.selectedEvent = event;
-    this.showEventDetails = true;  // Assuming you toggle visibility of details with this flag
+    this.showEventDetails = true;
     this.cdr.detectChanges();
 }
 
@@ -92,7 +92,7 @@ export class GamesComponent implements OnInit {
           const gameDate = new Date(game.date);
           // Ensure only adding events of the current month
           if (gameDate.getMonth() === monthStart.getMonth() && gameDate.getFullYear() === monthStart.getFullYear()) {
-            const index = gameDate.getDate() + firstDayOfMonth; // Adjust index to zero-based
+            const index = gameDate.getDate() + firstDayOfMonth; 
             if (index >= 0 && index < this.days.length) {
               this.days[index].events.push(game);
             }
@@ -107,8 +107,8 @@ export class GamesComponent implements OnInit {
     if (form.valid) {
       this.gamesService.createGame(this.newGame).subscribe({
         next: () => {
-          this.fetchEvents(); // Refresh events on successful addition
-          form.reset(); // Reset the form after submission
+          this.fetchEvents();
+          form.reset();
         },
         error: (err) => {
           console.error('Error adding game:', err);
