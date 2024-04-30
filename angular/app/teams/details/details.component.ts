@@ -7,6 +7,7 @@ import { tap, switchMap, of, finalize } from 'rxjs';
 import { Team } from '../models/team';
 import { Player } from '../players/models/player';
 import { AuthService } from '../../core';
+import { Papa } from 'ngx-papaparse';
 
 @Component({
   selector: 'app-details',
@@ -30,7 +31,8 @@ export class DetailsComponent {
     private route: ActivatedRoute,
     private readonly authSvc: AuthService,
     private readonly svc: TeamsService,
-    private modalService: NgbModal
+    private modalService: NgbModal,
+    private papa: Papa
   ) {}
   ngOnInit(): void {
     this.route.paramMap
@@ -64,6 +66,31 @@ export class DetailsComponent {
       backdrop: 'static',
     });
   }
+  file: File | null = null; // Store the file object
+
+  onFileChange(event: any): void {
+    const files = event.target.files;
+    if (files && files.length > 0) {
+      this.file = files[0]; // Store the file
+    }
+  }
+  
+  uploadCsv(): void {
+    if (this.file) {
+      this.papa.parse(this.file, {
+        header: true,
+        skipEmptyLines: true,
+        complete: (result) => {
+          const csvPlayers = result.data as Player[];
+          this.players = this.players.concat(csvPlayers);
+          this.file = null; // Reset the file after parsing
+        }
+      });
+    } else {
+      alert('No file selected!');
+    }
+  }
+
 
   removePlayer(t: Player) {
     this.players = this.players.filter((x) => x !== t);

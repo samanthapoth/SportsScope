@@ -1,94 +1,100 @@
 {
-  "hash": "7db9e14f",
-  "configHash": "b05242d0",
+  "hash": "a22585ad",
+  "configHash": "ebe1213c",
   "lockfileHash": "2736f05e",
-  "browserHash": "d267d74a",
+  "browserHash": "61375f08",
   "optimized": {
     "@angular/common": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
       "file": "@angular_common.js",
-      "fileHash": "130418ad",
+      "fileHash": "bde949c3",
       "needsInterop": false
     },
     "@angular/common/http": {
       "src": "../../../../../node_modules/@angular/common/fesm2022/http.mjs",
       "file": "@angular_common_http.js",
-      "fileHash": "b2636c57",
+      "fileHash": "1b93862b",
       "needsInterop": false
     },
     "@angular/core": {
       "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
       "file": "@angular_core.js",
-      "fileHash": "b3c4fc04",
+      "fileHash": "91855d1c",
       "needsInterop": false
     },
     "@angular/forms": {
       "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
       "file": "@angular_forms.js",
-      "fileHash": "71914f2f",
+      "fileHash": "849e9ce6",
       "needsInterop": false
     },
     "@angular/platform-browser": {
       "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
       "file": "@angular_platform-browser.js",
-      "fileHash": "8dcda31a",
+      "fileHash": "d84ff9d3",
       "needsInterop": false
     },
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
-      "fileHash": "8715c9bd",
+      "fileHash": "78bab35b",
       "needsInterop": false
     },
     "@ng-bootstrap/ng-bootstrap": {
       "src": "../../../../../node_modules/@ng-bootstrap/ng-bootstrap/fesm2022/ng-bootstrap.mjs",
       "file": "@ng-bootstrap_ng-bootstrap.js",
-      "fileHash": "9b2bb930",
+      "fileHash": "764552fa",
       "needsInterop": false
     },
     "@uiowa/spinner": {
       "src": "../../../../../node_modules/@uiowa/spinner/fesm2020/uiowa-spinner.mjs",
       "file": "@uiowa_spinner.js",
-      "fileHash": "ffb81abb",
+      "fileHash": "c6bb4ffb",
+      "needsInterop": false
+    },
+    "ngx-papaparse": {
+      "src": "../../../../../node_modules/ngx-papaparse/fesm2022/ngx-papaparse.mjs",
+      "file": "ngx-papaparse.js",
+      "fileHash": "ec860aec",
       "needsInterop": false
     },
     "rxjs": {
       "src": "../../../../../node_modules/rxjs/dist/esm5/index.js",
       "file": "rxjs.js",
-      "fileHash": "981907e8",
+      "fileHash": "92764c99",
       "needsInterop": false
     },
     "rxjs/operators": {
       "src": "../../../../../node_modules/rxjs/dist/esm5/operators/index.js",
       "file": "rxjs_operators.js",
-      "fileHash": "8c1c0b26",
+      "fileHash": "bdffd2a6",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-KAS3HDNO": {
-      "file": "chunk-KAS3HDNO.js"
+    "chunk-JVJAAFAV": {
+      "file": "chunk-JVJAAFAV.js"
     },
-    "chunk-5LV5AQHJ": {
-      "file": "chunk-5LV5AQHJ.js"
+    "chunk-WJRGY3HI": {
+      "file": "chunk-WJRGY3HI.js"
     },
-    "chunk-SRMAZHWM": {
-      "file": "chunk-SRMAZHWM.js"
+    "chunk-RMGIU5JB": {
+      "file": "chunk-RMGIU5JB.js"
     },
-    "chunk-DGV72MND": {
-      "file": "chunk-DGV72MND.js"
+    "chunk-FOIL2QQL": {
+      "file": "chunk-FOIL2QQL.js"
     },
-    "chunk-4RVK6YC4": {
-      "file": "chunk-4RVK6YC4.js"
+    "chunk-NROSRUTW": {
+      "file": "chunk-NROSRUTW.js"
     },
-    "chunk-UKEHM6V6": {
-      "file": "chunk-UKEHM6V6.js"
+    "chunk-PPK4BFRJ": {
+      "file": "chunk-PPK4BFRJ.js"
     },
-    "chunk-V2DXGMIT": {
-      "file": "chunk-V2DXGMIT.js"
+    "chunk-EO2EPJFZ": {
+      "file": "chunk-EO2EPJFZ.js"
     },
-    "chunk-ZDOIMVJD": {
-      "file": "chunk-ZDOIMVJD.js"
+    "chunk-FHF5RKLE": {
+      "file": "chunk-FHF5RKLE.js"
     }
   }
 }

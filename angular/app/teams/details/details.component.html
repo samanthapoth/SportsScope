@@ -88,25 +88,9 @@
       />
     </div>
     <div class="mb-2">
-      <div class="fw-bold">Players</div>
-      <div *ngFor="let t of players" class="ps-3 mb-1">
-        {{ t }}
-        <button class="btn btn-sm btn-danger py-0 px-1" (click)="removePlayer(t)">
-          X
-        </button>
-      </div>
-      <hr class="ms-3 w-25" />
-      <div class="ps-3 d-flex">
-        <input
-          type="text"
-          class="form-control me-2"
-          style="max-width: 150px"
-          #nt
-        />
-        <button class="btn btn-sm btn-success" (click)="addPlayer(nt.value)">
-          +
-        </button>
-      </div>
+      <label for="csvFile" class="fw-bold">Upload Players (CSV)</label>
+      <input type="file" id="csvFile" (change)="onFileChange($event)" accept=".csv">
+      <button class="btn btn-primary mt-2" (click)="uploadCsv()">Upload CSV</button>
     </div>
   </div>
   <div class="modal-footer">
