@@ -1,7 +1,108 @@
 :host {
   padding: 1rem;
 }
+
 .table-responsive {
   max-height: 600px; /* Adjust based on your needs */
   overflow-y: auto;
+}
+
+/* Base styles */
+body {
+  background: linear-gradient(to right, #007bff, #2e86de); /* Blue gradient background */
+  color: #fff; /* Default text color set to white for better contrast */
+  font-family: 'Arial', sans-serif; /* Uniform font for clean readability */
+  padding: 20px; /* Padding around the content for spacing */
+}
+
+h2 {
+  color: #fff; /* Ensuring the header is white */
+  padding-bottom: 10px; /* Space below the header */
+}
+
+/* Button styles */
+.btn {
+  border-radius: 0.25rem; /* Rounded corners for buttons */
+  font-weight: bold; /* Making button text bold */
+}
+
+.btn-outline-primary {
+  color: #fff; /* White text for primary outline buttons */
+  border-color: #fff; /* White border color */
+}
+
+.btn-outline-primary:hover {
+  background-color: #fff; /* White background on hover */
+  color: #007bff; /* Blue text on hover */
+}
+
+.btn-link {
+  color: #0088ff; /* Adjusted to a softer blue for link buttons */
+}
+
+.btn-link:hover {
+  color: #fff; /* White text on hover */
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Table styles */
+.table {
+  background-color: rgba(0, 123, 255, 0.1); /* Light blue background for table to match the gradient */
+  border-collapse: separate; /* Allows applying border spacing and rounded corners */
+  border-spacing: 0; /* Removes spacing between cells */
+  width: 100%; /* Table width set to full container width */
+  border-radius: 8px; /* Rounded corners for the entire table */
+  overflow: hidden; /* Hides anything that goes beyond the rounded corners */
+}
+
+.table th, .table td {
+  border: 1px solid #81d4fa; /* Softer blue borders for readability */
+  padding: 8px; /* Padding inside cells */
+}
+
+.table-dark {
+  background-color: #0056b3; /* A darker blue for table headers to distinguish from the body */
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 123, 255, 0.05); /* Zebra striping with lighter opacity */
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 123, 255, 0.2); /* Lighter blue background on hover */
+}
+
+/* Player badge styling */
+.badge {
+  background-color: #17a2b8; /* Teal background for a vibrant look */
+  color: #fff; /* White text for better contrast */
+  margin-right: 5px; /* Space between badges */
+}
+
+/* Modal styles */
+.modal-header, .modal-footer {
+  background: linear-gradient(to bottom right, #2196f3, #03a9f4, #00bcd4, #009688); /* Dark background for modals */
+  color: #fff; /* White text in modal header and footer */
+}
+
+.modal-body {
+  background: rgba(0, 0, 0, 0); /* Lighter black background for modal body */
+}
+
+.bg-success {
+  background-color: #28a745; /* Green background for success status */
+}
+
+/* Loader animation within button */
+.loading-bar {
+  display: inline-block;
+  background-color: #ccc;
+  height: 1rem;
+  width: 100%;
+  animation: load 2s linear infinite;
+}
+
+@keyframes load {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(100%); }
 }
