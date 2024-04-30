@@ -170,3 +170,8 @@
 2024-04-29 18:19:09,874 INFO routes.events:18 viewing 0 events
 2024-04-29 18:19:19,692 INFO routes.users:21 User [sam@gmail.com] is signing up.
 2024-04-29 18:19:20,066 INFO routes.users:33 	 User [sam@gmail.com] is created.
+2024-04-29 18:23:52,242 INFO main:21 Application starts up...
+2024-04-29 18:24:03,369 INFO routes.users:21 User [sam@gam.com] is signing up.
+2024-04-29 18:24:03,736 INFO routes.users:33 	 User [sam@gam.com] is created.
+2024-04-29 18:24:41,840 INFO routes.users:39 User [sam@gam.com] is signing in the system.
+2024-04-29 18:24:42,114 WARN routes.users:48 	 User [sam@gam.com] signed in

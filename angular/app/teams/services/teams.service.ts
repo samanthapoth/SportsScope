@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../src/environments/environment';
 import { Observable } from 'rxjs';
 import { Team } from '../models/team';
+import { Player } from '../players/models/player';
 
 @Injectable({ providedIn: 'root' })
 export class TeamsService {

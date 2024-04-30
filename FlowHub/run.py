@@ -50,7 +50,7 @@ app.add_middleware(
 
 # Register routes
 
-app.include_router(user_router, prefix="/users")
+app.include_router(user_router, prefix="/user")
 app.include_router(game_router, prefix="/games")
 app.include_router(team_router, prefix="/teams")
 app.include_router(player_router, prefix="/players")

@@ -19,8 +19,8 @@ import {
   ɵɵprojectionDef,
   ɵɵstyleProp
 } from "./chunk-4RVK6YC4.js";
-import "./chunk-V2DXGMIT.js";
 import "./chunk-UKEHM6V6.js";
+import "./chunk-V2DXGMIT.js";
 import "./chunk-ZDOIMVJD.js";
 
 // node_modules/@uiowa/spinner/fesm2020/uiowa-spinner.mjs
