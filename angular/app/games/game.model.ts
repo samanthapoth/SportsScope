@@ -1,9 +1,11 @@
+import { Team } from '../teams/models/team';
+
 export interface Game {
     _id?: string;  // Optional if not known yet (e.g., before creation)
     name: string;
     location: string;
-    homeTeam: string;
-    awayTeam: string;
+    homeTeam: Team;
+    awayTeam: Team;
     date: string;  // ISO string format for dates
     time: string;  // Could be a specific time format or ISO string
     played: boolean;
