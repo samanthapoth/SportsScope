@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Team } from '../models/team';
+import { Player } from '../players/models/player';
 import { TeamsService } from '../services/teams.service';
 import { NgbModalRef, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { AuthService } from '../../core';
@@ -14,7 +15,7 @@ export class AllComponent implements OnInit {
   teams: Team[] = [];
   name = '';
   logo = '';
-  players: string[] = [];
+  players: Player[] = [];
   location = '';
   busy = false;
   username = '';
@@ -40,10 +41,10 @@ export class AllComponent implements OnInit {
     });
   }
 
-  removePlayer(t: string) {
+  removePlayer(t: Player) {
     this.players = this.players.filter((x) => x !== t);
   }
-  addPlayer(t: string) {
+  addPlayer(t: Player) {
     if (t && !this.players.includes(t)) {
       this.players.push(t);
     }

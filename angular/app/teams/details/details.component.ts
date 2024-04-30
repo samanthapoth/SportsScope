@@ -5,6 +5,7 @@ import { ActivatedRoute, ParamMap } from '@angular/router';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { tap, switchMap, of, finalize } from 'rxjs';
 import { Team } from '../models/team';
+import { Player } from '../players/models/player';
 import { AuthService } from '../../core';
 
 @Component({
@@ -18,7 +19,7 @@ export class DetailsComponent {
   details: Team | null = null;
   name = '';
   logo = '';
-  players: string[] = [];
+  players: Player[] = [];
   location = '';
   busy = false;
   canUpdate = false;
@@ -64,10 +65,10 @@ export class DetailsComponent {
     });
   }
 
-  removePlayer(t: string) {
+  removePlayer(t: Player) {
     this.players = this.players.filter((x) => x !== t);
   }
-  addPlayer(t: string) {
+  addPlayer(t: Player) {
     if (t && !this.players.includes(t)) {
       this.players.push(t);
     }

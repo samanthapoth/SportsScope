@@ -5,6 +5,6 @@ export interface Team {
   creator: string;
   name: string;
   logo: string;
-  players: string[]; // Define an array of arrays
+  players: Player[]; // Define an array of arrays
   location: string;
 }

@@ -21,7 +21,7 @@ export class TeamsService {
   createTeam(
     name: string,
     logo: string,
-    players: string[],
+    players: Player[],
     location: string
   ): Observable<any> {
     return this.httpClient.post(`${this.apiUrl}/new`, {
@@ -36,7 +36,7 @@ export class TeamsService {
     id: string,
     name: string,
     logo: string,
-    players: string[],
+    players: Player[],
     location: string
   ): Observable<Team> {
     return this.httpClient.put<Team>(`${this.apiUrl}/${id}`, {
