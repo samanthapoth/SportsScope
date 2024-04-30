@@ -70,22 +70,46 @@ export class DetailsComponent {
 
   onFileChange(event: any): void {
     const files = event.target.files;
+    
     if (files && files.length > 0) {
+      alert('File selected!')
       this.file = files[0]; // Store the file
     }
   }
-  
+  parseCsvData(file: File): Player[] {
+    const players: Player[] = [];
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      if (event.target) {
+        const csvData = event.target.result as string;
+        const rows = csvData.split('\n');
+        const headers = rows[0].split(',');
+
+        for (let i = 1; i < rows.length; i++) {
+          const rowData = rows[i].split(',');
+          alert('Looking at player');
+          const player: Player = {
+            
+            name: rowData[0] || 'N/A',
+            age: parseInt(rowData[1]) || 100,
+            position: rowData[2] || 'N/A'
+          };
+          players.push(player);
+        }
+      }
+    };
+
+    reader.readAsText(file);
+    return players;
+  }
   uploadCsv(): void {
     if (this.file) {
-      this.papa.parse(this.file, {
-        header: true,
-        skipEmptyLines: true,
-        complete: (result) => {
-          const csvPlayers = result.data as Player[];
-          this.players = this.players.concat(csvPlayers);
+      {
+          this.players = this.parseCsvData(this.file);
           this.file = null; // Reset the file after parsing
+          
         }
-      });
+      ;
     } else {
       alert('No file selected!');
     }

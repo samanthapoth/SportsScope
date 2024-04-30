@@ -60,18 +60,44 @@ export class AllComponent implements OnInit {
       this.file = files[0];
     }
   }
-
+  parseCsvData(file: File): void {
+    const reader = new FileReader();
+    reader.onload = (event) => {
+      if (event.target) {
+        const csvData = event.target.result as string;
+        const rows = csvData.split('\n');
+        const headers = rows[0].split(',');
+  
+        
+  
+        for (let i = 1; i < rows.length; i++) {
+          const rowData = rows[i].split(',');
+          const player: Player = {
+            name: rowData[0] || 'N/A',
+            age: parseInt(rowData[1]) || 100,
+            position: rowData[2] || 'N/A'
+          };
+          this.players.push(player);
+        }
+  
+        // Now that all players are processed, you can perform any actions with the players array.
+        alert(this.players.length); // This will now show the correct length
+  
+        // Here you can do further processing with the players array if needed.
+      }
+    };
+    reader.readAsText(file);
+  }
   uploadCsv(): void {
     if (this.file) {
-      this.papa.parse(this.file, {
-        header: true,
-        skipEmptyLines: true,
-        complete: (result) => {
-          this.players = result.data as Player[];
+      {
+          
+          var players = this.parseCsvData(this.file);
           this.cdr.markForCheck(); // Ensure the new players are reflected in the view
           this.file = null; // Reset the file after parsing
         }
-      });
+        
+      ;
     } else {
       alert('No file selected!');
     }
