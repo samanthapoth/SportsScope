@@ -14,6 +14,7 @@ export class GamesComponent implements OnInit {
   days: any[] = [];
   showEventForm: boolean = false;
   showEventDetails: boolean = false;
+  showAddEventModal: boolean = false;
   selectedEvent: Game | null = null;
   newGame: Game = {
     name: '',
@@ -44,6 +45,10 @@ export class GamesComponent implements OnInit {
     this.showEventForm = true;
   }
   
+  toggleAddEventModal(): void {
+    this.showAddEventModal = !this.showAddEventModal;
+  }
+
   changeMonth(offset: number) {
     const current = new Date(this.currentMonth + " 1");
     current.setMonth(current.getMonth() + offset);
