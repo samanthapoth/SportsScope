@@ -18,13 +18,13 @@ export class GamesComponent implements OnInit {
   newGame: Game = {
     name: '',
     location: '',
-    homeTeam: '',
-    awayTeam: '',
+    home_team: '',
+    away_team: '',
     date: '',
     time: '',
     played: false,
-    homeTeamScore: 0,
-    awayTeamScore: 0
+    home_team_score: 0,
+    away_team_score: 0
   };
 
   constructor(private cdr: ChangeDetectorRef, private gamesService: GamesService) {}
@@ -132,13 +132,13 @@ export class GamesComponent implements OnInit {
       _id: this.selectedEvent._id,
       name: form.value.eventName,
       location: form.value.location,
-      homeTeam: form.value.home_team,
-      awayTeam: form.value.away_team,
+      home_team: form.value.home_team,
+      away_team: form.value.away_team,
       date: form.value.date,
       time: form.value.time,
       played: this.selectedEvent.played,
-      homeTeamScore: form.value.home_team_score || this.selectedEvent.homeTeamScore,
-      awayTeamScore: form.value.away_team_score || this.selectedEvent.awayTeamScore
+      home_team_score: form.value.home_team_score || this.selectedEvent.home_team_score,
+      away_team_score: form.value.away_team_score || this.selectedEvent.away_team_score
     };
   
     this.gamesService.updateGame(this.selectedEvent._id, updatedGame).subscribe({

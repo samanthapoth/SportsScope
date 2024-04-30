@@ -5,12 +5,12 @@
     <form #eventForm="ngForm" (ngSubmit)="addEvent(eventForm)">
         <input type="text" id="eventName" name="eventName" [(ngModel)]="newGame.name" placeholder="Event Name" required>
         <input type="text" id="location" name="location" [(ngModel)]="newGame.location" placeholder="Location" required>
-        <input type="text" id="home_team" name="home_team" [(ngModel)]="newGame.homeTeam" placeholder="Home Team" required>
-        <input type="text" id="away_team" name="away_team" [(ngModel)]="newGame.awayTeam" placeholder="Away Team" required>
+        <input type="text" id="home_team" name="home_team" [(ngModel)]="newGame.home_team" placeholder="Home Team" required>
+        <input type="text" id="away_team" name="away_team" [(ngModel)]="newGame.away_team" placeholder="Away Team" required>
         <input type="date" id="date" name="date" [(ngModel)]="newGame.date" required>
         <input type="time" id="time" name="time" [(ngModel)]="newGame.time" required>
-        <input type="number" id="home_team_score" name="home_team_score" [(ngModel)]="newGame.homeTeamScore" placeholder="Home Team Score">
-        <input type="number" id="away_team_score" name="away_team_score" [(ngModel)]="newGame.awayTeamScore" placeholder="Away Team Score">
+        <input type="number" id="home_team_score" name="home_team_score" [(ngModel)]="newGame.home_team_score" placeholder="Home Team Score">
+        <input type="number" id="away_team_score" name="away_team_score" [(ngModel)]="newGame.away_team_score" placeholder="Away Team Score">
         <button type="submit">Add Event</button>
     </form>
 </div>
@@ -54,8 +54,8 @@
         <p><strong>Date:</strong> {{ selectedEvent?.date | date:'fullDate' }}</p>
         <p><strong>Time:</strong> {{ selectedEvent?.time }}</p>
         <p><strong>Location:</strong> {{ selectedEvent?.location }}</p>
-        <p><strong>Teams:</strong> {{ selectedEvent?.homeTeam }} vs {{ selectedEvent?.awayTeam }}</p>
-        <p *ngIf="selectedEvent?.played"><strong>Score:</strong> {{ selectedEvent?.homeTeamScore }} - {{ selectedEvent?.awayTeamScore }}</p>
+        <p><strong>Teams:</strong> {{ selectedEvent?.home_team }} vs {{ selectedEvent?.away_team }}</p>
+        <p *ngIf="selectedEvent?.played"><strong>Score:</strong> {{ selectedEvent?.home_team_score }} - {{ selectedEvent?.away_team_score }}</p>
         <p *ngIf="!selectedEvent?.played"><strong>Status:</strong> Scheduled</p>
         <button (click)="removeEvent(selectedEvent)">Remove Event</button>
     </div>
