@@ -7,8 +7,8 @@ class Game(Document):
     creator: str = ""
     name: str = ""
     location: str = ""
-    home_team: Team
-    away_team: Team
+    home_team: str =""
+    away_team: str = ""
     date: str = ""
     time: str = ""
     played: bool = False
@@ -19,8 +19,8 @@ class Game(Document):
                 "example":{
                         "name":"weeqwed",
                         "location":"dsada",
-                        "home_team":{"name":"1","logo":"","players":[],"location":""},
-                        "away_team":{"name":"2","logo":"","players":[],"location":""},
+                        "home_team":"Iowa Hawkeyes",
+                        "away_team":"Iowa State Cyclones",
                         "date":"2024-04-27",
                         "time":"13:26",
                         "played":False,
@@ -36,8 +36,8 @@ class Game(Document):
 class GameUpdate(BaseModel):
     name: str = ""
     location: str = ""
-    home_team: Team
-    away_team: Team
+    home_team: str = ""
+    away_team: str = ""
     date: str = ""
     time: str = ""
     played: bool = False
@@ -49,8 +49,8 @@ class GameUpdate(BaseModel):
                     {
                         "name":"weeqwed",
                         "location":"dsada",
-                        "home_team":{"name":"1","logo":"","players":[],"location":""},
-                        "away_team":{"name":"2","logo":"","players":[],"location":""},
+                        "home_team":"Iowa Hawkeyes",
+                        "away_team":"Iowa State Cyclones",
                         "date":"2024-04-27",
                         "time":"13:26",
                         "played":False,
