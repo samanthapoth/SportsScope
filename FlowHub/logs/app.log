@@ -167,3 +167,29 @@
 2024-04-29 21:03:55,018 INFO run:24 Application starts up...
 2024-04-29 21:09:09,755 INFO routes.team_routes:22 viewing 9 team
 2024-04-29 21:09:17,330 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 21:16:38,252 INFO run:24 Application starts up...
+2024-04-29 21:16:59,923 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 21:17:02,165 INFO routes.game_routes:18 viewing 1 games
+2024-04-29 21:17:36,051 INFO routes.game_routes:18 viewing 1 games
+2024-04-29 21:18:26,322 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 21:18:27,518 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 21:18:53,667 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 21:19:33,906 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 21:20:12,430 INFO routes.game_routes:18 viewing 1 games
+2024-04-29 21:21:12,345 INFO routes.game_routes:18 viewing 1 games
+2024-04-29 21:22:11,859 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 21:22:19,384 INFO routes.team_routes:28 viewing team #662bdddba6ab85aa2b221e7f details.
+2024-04-29 21:22:20,244 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 21:23:23,888 INFO routes.team_routes:28 viewing team #662bdddba6ab85aa2b221e7f details.
+2024-04-29 21:23:27,334 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 21:23:45,873 INFO routes.team_routes:28 viewing team #663048a78fc9c9775504c007 details.
+2024-04-29 21:26:09,176 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 21:26:26,233 INFO routes.team_routes:28 viewing team #663048a78fc9c9775504c007 details.
+2024-04-29 21:26:48,787 INFO routes.team_routes:92 User [sam@gam.com] is updating team #663048a78fc9c9775504c007.
+2024-04-29 21:26:48,876 INFO routes.team_routes:110 	 Team #[663048a78fc9c9775504c007] is updated.
+2024-04-29 21:27:02,291 INFO routes.team_routes:22 viewing 9 team
+2024-04-29 21:28:00,148 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #663048a78fc9c9775504c007.
+2024-04-29 21:28:00,241 INFO routes.team_routes:133 	 Team #[663048a78fc9c9775504c007] is deleted.
+2024-04-29 21:28:00,276 INFO routes.team_routes:22 viewing 8 team
+2024-04-29 21:29:15,910 INFO routes.game_routes:18 viewing 1 games
+2024-04-29 21:29:19,758 INFO routes.game_routes:18 viewing 1 games

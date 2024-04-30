@@ -1,3 +1,4 @@
+// all.component.ts
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { Team } from '../models/team';
 import { Player } from '../players/models/player';
