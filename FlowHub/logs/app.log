@@ -411,3 +411,4 @@
 2024-04-30 01:11:47,580 INFO routes.team_routes:22 viewing 3 team
 2024-04-30 01:12:14,441 INFO routes.game_routes:18 viewing 6 games
 2024-04-30 01:12:22,421 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 01:14:25,368 INFO run:24 Application starts up...
