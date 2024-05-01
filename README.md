@@ -153,6 +153,10 @@ When viewing a game as shown in the image below, the "Remove Event" button canno
 
 <img width="300" alt="Screenshot 2024-04-30 at 10 41 56 PM" src="https://github.com/samanthapoth/SportsScope/assets/90707077/038dcce8-aca2-4c90-afac-855ac646c091">
 
+Admins can edit all the details of a game with the new edit feature, mark a game as played, and enter the final score, which updates the event on the calendar.
+
+<img width ="300" alt = "editscreen" src = "https://github.com/samanthapoth/SportsScope/angular/app/games/EDITSCREEN.png">
+
 If a user wants to logout, they can click the "Logout" button in the top right corner of the screen and then they will be redirected to the login page. 
 
 If you are using SportsScope and have any questions, please feel free to reach out to Samantha Pothitakis at samantha-pothitakis@uiowa.edu.
