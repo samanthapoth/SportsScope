@@ -838,3 +838,4 @@
 2024-04-30 22:54:53,138 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6631bd06c87962eb7d7915d3.
 2024-04-30 22:54:53,308 INFO routes.team_routes:133 	 Team #[6631bd06c87962eb7d7915d3] is deleted.
 2024-04-30 22:54:53,368 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:56:06,453 INFO routes.team_routes:22 viewing 2 team
