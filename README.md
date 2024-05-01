@@ -91,8 +91,7 @@ This guide provides step-by-step instructions to set up an Angular front end and
      ```
      npm i
      ```
-
-5. **Install PapaParse Library:**
+6. **Install PapaParse Library:**
    - For Windows:
      ```
      npm ngx install papaparse
@@ -102,7 +101,7 @@ This guide provides step-by-step instructions to set up an Angular front end and
      npm install papaparse
      ```
 
-6. **Run Development Server:**
+7. **Run Development Server:**
    - Start the Angular development server:
      ```
      ng serve
