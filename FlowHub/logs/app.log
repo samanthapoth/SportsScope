@@ -839,3 +839,17 @@
 2024-04-30 22:54:53,308 INFO routes.team_routes:133 	 Team #[6631bd06c87962eb7d7915d3] is deleted.
 2024-04-30 22:54:53,368 INFO routes.team_routes:22 viewing 2 team
 2024-04-30 22:56:06,453 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 23:49:09,395 INFO run:24 Application starts up...
+2024-04-30 23:49:34,761 INFO routes.team_routes:23 viewing 3 team
+2024-04-30 23:52:14,529 INFO routes.team_routes:23 viewing 2 team
+2024-04-30 23:54:01,644 INFO routes.team_routes:72 User [sam@gam.com] is creating an team.
+2024-04-30 23:54:01,721 INFO routes.player_routes:39 	 A new player #[6631cae983c64a6732bb1ed6] created.
+2024-04-30 23:54:01,780 INFO routes.player_routes:39 	 A new player #[6631cae983c64a6732bb1ed7] created.
+2024-04-30 23:54:01,838 INFO routes.player_routes:39 	 A new player #[6631cae983c64a6732bb1ed8] created.
+2024-04-30 23:54:01,896 INFO routes.team_routes:76 	 A new team #[6631cae983c64a6732bb1ed9] created.
+2024-04-30 23:54:01,961 INFO routes.team_routes:23 viewing 3 team
+2024-04-30 23:54:12,726 INFO routes.team_routes:108 User [sam@gam.com] is deleting team #6631cae983c64a6732bb1ed9.
+2024-04-30 23:54:14,218 INFO routes.team_routes:108 User [sam@gam.com] is deleting team #6631cae983c64a6732bb1ed9.
+2024-04-30 23:54:14,683 INFO routes.team_routes:108 User [sam@gam.com] is deleting team #6631cae983c64a6732bb1ed9.
+2024-04-30 23:54:14,969 INFO routes.team_routes:108 User [sam@gam.com] is deleting team #6631cae983c64a6732bb1ed9.
+2024-04-30 23:56:27,100 INFO routes.team_routes:23 viewing 3 team
