@@ -72,7 +72,6 @@ export class DetailsComponent {
     const files = event.target.files;
     
     if (files && files.length > 0) {
-      alert('File selected!')
       this.file = files[0]; // Store the file
     }
   }
@@ -87,7 +86,6 @@ export class DetailsComponent {
 
         for (let i = 1; i < rows.length; i++) {
           const rowData = rows[i].split(',');
-          alert('Looking at player');
           const player: Player = {
             
             name: rowData[0] || 'N/A',
@@ -96,6 +94,7 @@ export class DetailsComponent {
           };
           players.push(player);
         }
+        alert('File uploaded successfully!')
       }
     };
 
@@ -115,6 +114,36 @@ export class DetailsComponent {
     }
   }
 
+
+  downloadCsv(): void {
+    if (!this.details || !this.details.players.length) {
+      alert('No players to download.');
+      return;
+    }
+  
+    let csvLines = ["Name,Age,Position"]; // Start with the header
+  
+    // Populate the CSV lines with player data
+    this.details.players.forEach(player => {
+      const row = `${player.name},${player.age},${player.position}`;
+      csvLines.push(row);
+    });
+  
+    // Combine all CSV lines using "\n" as the newline character
+    let csvContent = csvLines.join("\n");
+    let csvData = "data:text/csv;charset=utf-8," + encodeURI(csvContent);
+  
+    // Create a temporary link to trigger the download
+    const link = document.createElement("a");
+    link.setAttribute("href", csvData);
+    link.setAttribute("download", `${this.details.name}-players.csv`);
+    document.body.appendChild(link); // Required for Firefox
+    link.click();
+    document.body.removeChild(link); // Clean up
+  }
+  
+  
+  
 
   removePlayer(t: Player) {
     this.players = this.players.filter((x) => x !== t);

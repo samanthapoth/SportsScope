@@ -51,6 +51,7 @@
       >
         Update
       </button>
+      <button *ngIf="details?.players" type="button" class="btn btn-success" (click)="downloadCsv()">Download Players</button>
     </div>
   </div>
 </section>
