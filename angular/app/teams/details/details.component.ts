@@ -76,31 +76,40 @@ export class DetailsComponent {
     }
   }
   parseCsvData(file: File): Player[] {
+    const expectedHeaders = ['Name', 'Age', 'Position']; // Define expected headers
     const players: Player[] = [];
     const reader = new FileReader();
+  
     reader.onload = (event) => {
       if (event.target) {
         const csvData = event.target.result as string;
-        const rows = csvData.split('\n');
-        const headers = rows[0].split(',');
-
+        const rows = csvData.split('\n').map(row => row.trim()).filter(row => row); // Trim and remove empty lines
+        const headers = rows[0].split(',').map(header => header.trim());
+  
+        // Check if headers match expected headers
+        const isHeaderValid = expectedHeaders.every((header, index) => headers[index] === header);
+        if (!isHeaderValid) {
+          alert('CSV file does not have the correct headers. Please ensure the headers are: Name, Age, Position.');
+          return; // Stop processing if headers are invalid
+        }
+  
         for (let i = 1; i < rows.length; i++) {
-          const rowData = rows[i].split(',');
+          const rowData = rows[i].split(',').map(data => data.trim());
           const player: Player = {
-            
             name: rowData[0] || 'N/A',
-            age: parseInt(rowData[1]) || 100,
+            age: parseInt(rowData[1]) || 100, // Default to 100 if age is missing or invalid
             position: rowData[2] || 'N/A'
           };
           players.push(player);
         }
-        alert('File uploaded successfully!')
+        alert('File uploaded successfully!');
       }
     };
-
+  
     reader.readAsText(file);
     return players;
   }
+  
   uploadCsv(): void {
     if (this.file) {
       {

@@ -1,4 +1,3 @@
-// all.component.ts
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { Team } from '../models/team';
 import { Player } from '../players/models/player';
@@ -6,7 +5,6 @@ import { TeamsService } from '../services/teams.service';
 import { NgbModal, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { AuthService } from '../../core';
 import { finalize } from 'rxjs';
-import { Papa } from 'ngx-papaparse';
 
 @Component({
   selector: 'app-all',
@@ -28,7 +26,6 @@ export class AllComponent implements OnInit {
   constructor(
     private authSvc: AuthService,
     private svc: TeamsService,
-    private papa: Papa,
     private modalService: NgbModal,
     private cdr: ChangeDetectorRef
   ) {
@@ -60,15 +57,22 @@ export class AllComponent implements OnInit {
       this.file = files[0];
     }
   }
+
   parseCsvData(file: File): void {
     const reader = new FileReader();
     reader.onload = (event) => {
       if (event.target) {
         const csvData = event.target.result as string;
-        const rows = csvData.split('\n');
-        const headers = rows[0].split(',');
-  
+        const rows = csvData.split('\n').map(row => row.trim()).filter(row => row);
+        const headers = rows[0].split(',').map(header => header.trim());
         
+        // Validate headers
+        const expectedHeaders = ['Name', 'Age', 'Position'];
+        const isHeaderValid = expectedHeaders.every((header, index) => headers[index] === header);
+        if (!isHeaderValid) {
+          alert('CSV file does not have the correct headers. Please ensure the headers are: Name, Age, Position.');
+          return; // Stop processing if headers are invalid
+        }
   
         for (let i = 1; i < rows.length; i++) {
           const rowData = rows[i].split(',');
@@ -79,20 +83,16 @@ export class AllComponent implements OnInit {
           };
           this.players.push(player);
         }
+        this.cdr.markForCheck(); // Update the view with new players
       }
     };
     reader.readAsText(file);
   }
+
   uploadCsv(): void {
     if (this.file) {
-      {
-          
-          var players = this.parseCsvData(this.file);
-          this.cdr.markForCheck(); // Ensure the new players are reflected in the view
-          this.file = null; // Reset the file after parsing
-        }
-        
-      ;
+      this.parseCsvData(this.file);
+      this.file = null; // Reset the file after parsing
     } else {
       alert('No file selected!');
     }
@@ -108,14 +108,12 @@ export class AllComponent implements OnInit {
     this.svc.createTeam(this.name, this.logo, this.players, this.location)
       .pipe(finalize(() => {
         this.busy = false;
-        this.modalRef?.close();
         this.resetForm();
         this.loadTeams();
       }))
       .subscribe({
         next: (team) => {
           this.teams.push(team);
-        //  this.open(content);
           this.modalRef?.close();
         },
         error: (error) => {
