@@ -155,7 +155,7 @@ When viewing a game as shown in the image below, the "Remove Event" button canno
 
 Admins can edit all the details of a game with the new edit feature, mark a game as played, and enter the final score, which updates the event on the calendar.
 
-<img width ="300" alt = "editscreen" src = "https://github.com/samanthapoth/SportsScope/angular/app/games/EDITSCREEN.png">
+<img width ="300" alt = "editscreen" src = "angular/app/games/EDITSCREEN.png">
 
 If a user wants to logout, they can click the "Logout" button in the top right corner of the screen and then they will be redirected to the login page. 
 
