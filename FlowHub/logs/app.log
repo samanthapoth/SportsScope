@@ -838,3 +838,134 @@
 2024-04-30 22:54:53,138 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6631bd06c87962eb7d7915d3.
 2024-04-30 22:54:53,308 INFO routes.team_routes:133 	 Team #[6631bd06c87962eb7d7915d3] is deleted.
 2024-04-30 22:54:53,368 INFO routes.team_routes:22 viewing 2 team
+2024-05-01 01:36:29,686 INFO run:24 Application starts up...
+2024-05-01 01:38:43,354 INFO run:24 Application starts up...
+2024-05-01 01:43:55,296 INFO routes.game_routes:18 viewing 6 games
+2024-05-01 01:43:56,202 INFO routes.team_routes:23 viewing 1 team
+2024-05-01 01:43:57,499 INFO routes.team_routes:108 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:44:04,593 INFO routes.users:39 User [sam@gam.com] is signing in the system.
+2024-05-01 01:44:04,942 WARN routes.users:48 	 User [sam@gam.com] signed in
+2024-05-01 01:44:06,616 INFO routes.team_routes:23 viewing 1 team
+2024-05-01 01:44:07,531 INFO routes.team_routes:108 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:44:42,372 INFO routes.team_routes:108 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:47:32,727 INFO run:24 Application starts up...
+2024-05-01 01:47:39,344 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:47:39,410 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:47:39,477 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:47:42,699 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:47:42,754 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:47:42,818 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:47:46,182 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:47:46,246 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:47:46,308 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:47:46,576 INFO routes.team_routes:27 viewing team #6631dd142bfc2da4a1692b35 details.
+2024-05-01 01:47:47,318 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:47:48,579 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:47:48,643 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:47:48,706 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:48:33,094 INFO run:24 Application starts up...
+2024-05-01 01:49:07,317 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:49:08,413 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:49:08,469 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:49:08,533 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:49:13,607 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:49:13,672 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:49:13,745 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:49:13,941 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:49:13,999 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:49:14,071 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:49:14,744 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:49:14,809 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:49:14,872 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:49:15,068 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:49:15,123 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:49:15,192 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:49:53,218 INFO run:24 Application starts up...
+2024-05-01 01:50:39,610 INFO run:24 Application starts up...
+2024-05-01 01:50:45,479 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:50:45,538 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:50:45,604 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:50:48,430 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:50:49,291 INFO routes.team_routes:27 viewing team #6631dd142bfc2da4a1692b35 details.
+2024-05-01 01:50:50,157 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:50:51,054 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:50:51,110 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:50:51,172 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:50:51,458 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:50:51,520 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:50:51,580 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:50:51,796 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:50:51,854 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:50:51,917 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:50:52,116 INFO routes.team_routes:106 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:50:52,171 INFO routes.team_routes:123 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:50:52,233 INFO routes.team_routes:21 viewing 1 team
+2024-05-01 01:51:58,586 INFO run:24 Application starts up...
+2024-05-01 01:52:03,885 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6631dd142bfc2da4a1692b35.
+2024-05-01 01:52:04,063 INFO routes.team_routes:133 	 Team #[6631dd142bfc2da4a1692b35] is deleted.
+2024-05-01 01:52:04,128 INFO routes.team_routes:22 viewing 0 team
+2024-05-01 01:52:25,621 INFO run:24 Application starts up...
+2024-05-01 01:52:46,033 INFO routes.team_routes:71 User [sam@gam.com] is creating an team.
+2024-05-01 01:52:46,116 INFO routes.player_routes:41 	 A new player #[6631e6be8d63e544b173f4f4] created.
+2024-05-01 01:52:46,174 INFO routes.player_routes:41 	 A new player #[6631e6be8d63e544b173f4f5] created.
+2024-05-01 01:52:46,233 INFO routes.player_routes:41 	 A new player #[6631e6be8d63e544b173f4f6] created.
+2024-05-01 01:52:46,294 INFO routes.team_routes:75 	 A new team #[6631e6be8d63e544b173f4f7] created.
+2024-05-01 01:52:46,366 INFO routes.team_routes:22 viewing 1 team
+2024-05-01 01:52:47,809 INFO routes.team_routes:28 viewing team #6631e6be8d63e544b173f4f7 details.
+2024-05-01 01:52:49,309 INFO routes.team_routes:22 viewing 1 team
+2024-05-01 01:52:51,523 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6631e6be8d63e544b173f4f7.
+2024-05-01 01:52:51,698 INFO routes.team_routes:133 	 Team #[6631e6be8d63e544b173f4f7] is deleted.
+2024-05-01 01:52:51,759 INFO routes.team_routes:22 viewing 0 team
+2024-05-01 01:53:14,629 INFO run:24 Application starts up...
+2024-05-01 01:53:34,717 INFO run:24 Application starts up...
+2024-05-01 01:53:49,035 INFO run:24 Application starts up...
+2024-05-01 01:53:54,987 INFO run:24 Application starts up...
+2024-05-01 01:54:13,137 INFO run:24 Application starts up...
+2024-05-01 01:54:47,903 INFO routes.team_routes:71 User [sam@gam.com] is creating an team.
+2024-05-01 01:54:47,980 INFO routes.player_routes:41 	 A new player #[6631e737dce0aa3d296ca5e5] created.
+2024-05-01 01:54:48,037 INFO routes.player_routes:41 	 A new player #[6631e737dce0aa3d296ca5e6] created.
+2024-05-01 01:54:48,095 INFO routes.player_routes:41 	 A new player #[6631e738dce0aa3d296ca5e7] created.
+2024-05-01 01:54:48,159 INFO routes.team_routes:75 	 A new team #[6631e738dce0aa3d296ca5e8] created.
+2024-05-01 01:54:48,229 INFO routes.team_routes:22 viewing 1 team
+2024-05-01 01:55:09,320 INFO routes.team_routes:71 User [sam@gam.com] is creating an team.
+2024-05-01 01:55:09,385 INFO routes.player_routes:41 	 A new player #[6631e74ddce0aa3d296ca5e9] created.
+2024-05-01 01:55:09,444 INFO routes.player_routes:41 	 A new player #[6631e74ddce0aa3d296ca5ea] created.
+2024-05-01 01:55:09,503 INFO routes.player_routes:41 	 A new player #[6631e74ddce0aa3d296ca5eb] created.
+2024-05-01 01:55:09,564 INFO routes.team_routes:75 	 A new team #[6631e74ddce0aa3d296ca5ec] created.
+2024-05-01 01:55:09,633 INFO routes.team_routes:22 viewing 2 team
+2024-05-01 01:55:11,742 INFO routes.team_routes:28 viewing team #6631e74ddce0aa3d296ca5ec details.
+2024-05-01 01:55:24,162 INFO routes.team_routes:92 User [sam@gam.com] is updating team #6631e74ddce0aa3d296ca5ec.
+2024-05-01 01:55:24,344 INFO routes.team_routes:110 	 Team #[6631e74ddce0aa3d296ca5ec] is updated.
+2024-05-01 01:55:31,181 INFO routes.team_routes:22 viewing 2 team
+2024-05-01 01:55:34,682 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6631e74ddce0aa3d296ca5ec.
+2024-05-01 01:55:34,847 INFO routes.team_routes:133 	 Team #[6631e74ddce0aa3d296ca5ec] is deleted.
+2024-05-01 01:55:34,909 INFO routes.team_routes:22 viewing 1 team
+2024-05-01 01:55:53,052 INFO routes.users:39 User [samantha-pothitakis@uiowa.edu] is signing in the system.
+2024-05-01 01:55:53,456 WARN routes.users:48 	 User [samantha-pothitakis@uiowa.edu] signed in
+2024-05-01 01:55:55,895 INFO routes.team_routes:22 viewing 1 team
+2024-05-01 01:55:57,136 INFO routes.team_routes:28 viewing team #6631e738dce0aa3d296ca5e8 details.
+2024-05-01 01:55:59,221 INFO routes.team_routes:22 viewing 1 team
+2024-05-01 01:56:33,744 INFO routes.team_routes:71 User [samantha-pothitakis@uiowa.edu] is creating an team.
+2024-05-01 01:56:33,816 INFO routes.player_routes:41 	 A new player #[6631e7a1dce0aa3d296ca5ed] created.
+2024-05-01 01:56:33,875 INFO routes.player_routes:41 	 A new player #[6631e7a1dce0aa3d296ca5ee] created.
+2024-05-01 01:56:33,933 INFO routes.team_routes:75 	 A new team #[6631e7a1dce0aa3d296ca5ef] created.
+2024-05-01 01:56:33,997 INFO routes.team_routes:22 viewing 2 team
+2024-05-01 01:56:37,556 INFO routes.team_routes:28 viewing team #6631e7a1dce0aa3d296ca5ef details.
+2024-05-01 01:56:59,060 INFO routes.team_routes:92 User [samantha-pothitakis@uiowa.edu] is updating team #6631e7a1dce0aa3d296ca5ef.
+2024-05-01 01:56:59,247 INFO routes.team_routes:110 	 Team #[6631e7a1dce0aa3d296ca5ef] is updated.
+2024-05-01 01:57:02,822 INFO routes.team_routes:22 viewing 2 team
+2024-05-01 01:57:07,740 INFO routes.team_routes:28 viewing team #6631e7a1dce0aa3d296ca5ef details.
+2024-05-01 01:57:19,476 INFO routes.team_routes:92 User [samantha-pothitakis@uiowa.edu] is updating team #6631e7a1dce0aa3d296ca5ef.
+2024-05-01 01:57:19,656 INFO routes.team_routes:110 	 Team #[6631e7a1dce0aa3d296ca5ef] is updated.
+2024-05-01 01:57:37,883 INFO routes.team_routes:92 User [samantha-pothitakis@uiowa.edu] is updating team #6631e7a1dce0aa3d296ca5ef.
+2024-05-01 01:57:38,060 INFO routes.team_routes:110 	 Team #[6631e7a1dce0aa3d296ca5ef] is updated.
+2024-05-01 01:57:41,155 INFO routes.team_routes:22 viewing 2 team
+2024-05-01 01:57:43,914 INFO routes.team_routes:28 viewing team #6631e7a1dce0aa3d296ca5ef details.
+2024-05-01 01:57:45,517 INFO routes.team_routes:22 viewing 2 team
+2024-05-01 01:57:46,372 INFO routes.game_routes:18 viewing 6 games
+2024-05-01 01:57:56,549 INFO routes.game_routes:38 User [samantha-pothitakis@uiowa.edu] is creating a game.
+2024-05-01 01:57:56,611 INFO routes.game_routes:40 	 A new game #[6631e7f4dce0aa3d296ca5f0] created.
+2024-05-01 01:57:56,671 INFO routes.game_routes:18 viewing 7 games
+2024-05-01 01:57:58,359 INFO routes.game_routes:72 User [samantha-pothitakis@uiowa.edu] is deleting game #6631e7f4dce0aa3d296ca5f0.
+2024-05-01 01:57:58,527 INFO routes.game_routes:89 	 Game #[6631e7f4dce0aa3d296ca5f0] is deleted.
+2024-05-01 01:57:58,589 INFO routes.game_routes:18 viewing 6 games

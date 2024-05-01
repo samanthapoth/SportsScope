@@ -35,10 +35,21 @@ async def retrieve_player(id: PydanticObjectId) -> Player:
 @player_router.post("/new")
 async def create_player(body: Player) -> dict:
     
+    #logger.info(f"User [{user}] is creating a player.")
+    
     id = await player_database.save(body)
     logger.info(f"\t A new player #[{id}] created.")
     return {"message": "Player created successfully"}
 
+'''
+@player_router.post("/new")
+async def create_player(body: Player, user: str = Depends(authenticate)) -> dict:
+    body.creator = user
+    logger.info(f"User [{user}] is creating an player.")
+    id = await player_database.save(body)
+    logger.info(f"\t A new player #[{id}] created.")
+    return {"message": "Player created successfully"}
+'''
 
 @player_router.put("/{id}", response_model=Player)
 async def update_player(

@@ -5,7 +5,6 @@ from database.connection import Database
 from fastapi import APIRouter, Depends, HTTPException, status
 from fastapi.responses import StreamingResponse
 from models.team import Team, TeamUpdate
-from models.player import Player
 from routes import player_routes
 import csv
 from io import StringIO
@@ -15,7 +14,7 @@ logger = logging.getLogger(__name__)
 team_router = APIRouter(tags=["Teams"])
 
 team_database = Database(Team)
-player_database = Database(Player)
+
 
 @team_router.get("/", response_model=list[Team])
 async def retrieve_all_teams() -> list[Team]:
@@ -76,6 +75,15 @@ async def create_team(body: Team, user: str = Depends(authenticate)) -> dict:
     logger.info(f"\t A new team #[{id}] created.")
     return {"message": "Team created successfully"}
 
+'''
+@team_router.post("/new")
+async def create_team(body: Team, user: str = Depends(authenticate)) -> dict:
+    body.creator = user
+    logger.info(f"User [{user}] is creating an team.")
+    id = await team_database.save(body)
+    logger.info(f"\t A new team #[{id}] created.")
+    return {"message": "Team created successfully"}
+'''
 
 @team_router.put("/{id}", response_model=Team)
 async def update_team(
@@ -121,11 +129,6 @@ async def delete_team(id: PydanticObjectId, user: str = Depends(authenticate)) -
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST, detail="Operation not allowed"
         )
-        
-    for i in team.players:
-        i = await player_database.delete(i._id)
     team = await team_database.delete(id)
-       
-    
     logger.info(f"\t Team #[{id}] is deleted.")
     return {"message": "Team deleted successfully."}

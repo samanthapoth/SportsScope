@@ -63,26 +63,13 @@ This guide provides step-by-step instructions to set up an Angular front end and
 ## Front End (Angular)
 
 1. **Angular Installation:**
-   - Ensure you have Node.js installed on your machine.
+   - Ensure you have Node.js installed on your machine. Navigate to the "angular" directory inside of SportsScope where you are running the app.
    - Install Angular CLI globally by running:
      ```
      npm install -g @angular/cli
      ```
 
-2. **Create Angular Project:**
-   - Navigate to the desired directory where you want to create the project.
-   - Run the following command to create a new Angular project:
-     ```
-     ng new my-angular-project
-     ```
-
-3. **Navigate to Project Directory:**
-   - Move into the newly created project directory:
-     ```
-     cd my-angular-project
-     ```
-
-4. **Install Dependencies:**
+2. **Install Dependencies:**
    - Inside the project directory, install the required npm dependencies:
      ```
      npm install
@@ -91,7 +78,7 @@ This guide provides step-by-step instructions to set up an Angular front end and
      ```
      npm i
      ```
-6. **Install PapaParse Library:**
+3. **Install PapaParse Library:**
    - For Windows:
      ```
      npm ngx install papaparse
@@ -101,7 +88,7 @@ This guide provides step-by-step instructions to set up an Angular front end and
      npm install ngx-papaparse
      ```
 
-7. **Run Development Server:**
+4. **Run Development Server:**
    - Start the Angular development server:
      ```
      ng serve
