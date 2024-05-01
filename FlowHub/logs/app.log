@@ -412,3 +412,120 @@
 2024-04-30 01:12:14,441 INFO routes.game_routes:18 viewing 6 games
 2024-04-30 01:12:22,421 INFO routes.team_routes:22 viewing 3 team
 2024-04-30 01:14:25,368 INFO run:24 Application starts up...
+2024-04-30 12:14:56,021 INFO run:24 Application starts up...
+2024-04-30 12:15:37,074 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 12:15:40,038 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 12:16:04,867 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 12:16:15,032 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 12:16:25,764 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 12:16:46,736 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 12:16:53,789 INFO routes.users:39 User [sam@gam.com] is signing in the system.
+2024-04-30 12:16:54,354 WARN routes.users:48 	 User [sam@gam.com] signed in
+2024-04-30 12:16:57,889 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 12:17:01,191 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6630884c2a8b65297739a2fc.
+2024-04-30 12:17:01,287 INFO routes.team_routes:133 	 Team #[6630884c2a8b65297739a2fc] is deleted.
+2024-04-30 12:17:01,325 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:17:02,745 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 12:17:20,128 INFO routes.game_routes:38 User [sam@gam.com] is creating a game.
+2024-04-30 12:17:20,185 INFO routes.game_routes:40 	 A new game #[663127a0e3e80134e7f99453] created.
+2024-04-30 12:17:20,220 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 12:17:28,198 INFO routes.game_routes:72 User [sam@gam.com] is deleting game #663127a0e3e80134e7f99453.
+2024-04-30 12:17:28,289 INFO routes.game_routes:89 	 Game #[663127a0e3e80134e7f99453] is deleted.
+2024-04-30 12:17:28,323 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 12:17:30,923 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:17:32,315 INFO routes.team_routes:28 viewing team #663089112a8b65297739a2ff details.
+2024-04-30 12:17:33,556 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:19:09,088 INFO routes.team_routes:71 User [sam@gam.com] is creating an team.
+2024-04-30 12:19:09,124 INFO routes.player_routes:41 	 A new player #[6631280de3e80134e7f99454] created.
+2024-04-30 12:19:09,165 INFO routes.player_routes:41 	 A new player #[6631280de3e80134e7f99455] created.
+2024-04-30 12:19:09,198 INFO routes.team_routes:75 	 A new team #[6631280de3e80134e7f99456] created.
+2024-04-30 12:19:09,234 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 12:19:11,555 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6631280de3e80134e7f99456.
+2024-04-30 12:19:11,651 INFO routes.team_routes:133 	 Team #[6631280de3e80134e7f99456] is deleted.
+2024-04-30 12:19:11,687 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:19:14,641 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:22:42,133 INFO run:24 Application starts up...
+2024-04-30 12:23:03,047 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:23:05,707 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 12:23:14,270 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 12:23:15,507 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 12:23:15,998 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 12:23:17,110 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 12:24:07,837 INFO routes.users:21 User [sam@uiowa.edu] is signing up.
+2024-04-30 12:24:08,255 INFO routes.users:33 	 User [sam@uiowa.edu] is created.
+2024-04-30 12:24:13,719 INFO routes.users:39 User [sam@uiowa.edu] is signing in the system.
+2024-04-30 12:24:14,059 WARN routes.users:48 	 User [sam@uiowa.edu] signed in
+2024-04-30 12:24:18,285 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:24:33,775 INFO routes.team_routes:71 User [sam@uiowa.edu] is creating an team.
+2024-04-30 12:24:33,809 INFO routes.player_routes:41 	 A new player #[66312951c6df79dd056a7a65] created.
+2024-04-30 12:24:33,845 INFO routes.player_routes:41 	 A new player #[66312951c6df79dd056a7a66] created.
+2024-04-30 12:24:33,877 INFO routes.player_routes:41 	 A new player #[66312951c6df79dd056a7a67] created.
+2024-04-30 12:24:33,909 INFO routes.team_routes:75 	 A new team #[66312951c6df79dd056a7a68] created.
+2024-04-30 12:24:33,949 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 12:24:44,033 INFO routes.team_routes:28 viewing team #66312951c6df79dd056a7a68 details.
+2024-04-30 12:25:16,941 INFO routes.team_routes:28 viewing team #66312951c6df79dd056a7a68 details.
+2024-04-30 12:25:22,820 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 12:25:25,032 INFO routes.team_routes:116 User [sam@uiowa.edu] is deleting team #66312951c6df79dd056a7a68.
+2024-04-30 12:25:25,118 INFO routes.team_routes:133 	 Team #[66312951c6df79dd056a7a68] is deleted.
+2024-04-30 12:25:25,155 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:25:42,655 INFO routes.team_routes:71 User [sam@uiowa.edu] is creating an team.
+2024-04-30 12:25:42,692 INFO routes.player_routes:41 	 A new player #[66312996c6df79dd056a7a69] created.
+2024-04-30 12:25:42,723 INFO routes.player_routes:41 	 A new player #[66312996c6df79dd056a7a6a] created.
+2024-04-30 12:25:42,755 INFO routes.player_routes:41 	 A new player #[66312996c6df79dd056a7a6b] created.
+2024-04-30 12:25:42,787 INFO routes.team_routes:75 	 A new team #[66312996c6df79dd056a7a6c] created.
+2024-04-30 12:25:42,828 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 12:25:52,505 INFO routes.team_routes:71 User [sam@uiowa.edu] is creating an team.
+2024-04-30 12:25:52,542 INFO routes.player_routes:41 	 A new player #[663129a0c6df79dd056a7a6d] created.
+2024-04-30 12:25:52,581 INFO routes.player_routes:41 	 A new player #[663129a0c6df79dd056a7a6e] created.
+2024-04-30 12:25:52,615 INFO routes.player_routes:41 	 A new player #[663129a0c6df79dd056a7a6f] created.
+2024-04-30 12:25:52,649 INFO routes.team_routes:75 	 A new team #[663129a0c6df79dd056a7a70] created.
+2024-04-30 12:25:52,686 INFO routes.team_routes:22 viewing 4 team
+2024-04-30 12:25:54,321 INFO routes.team_routes:116 User [sam@uiowa.edu] is deleting team #66312996c6df79dd056a7a6c.
+2024-04-30 12:25:54,413 INFO routes.team_routes:133 	 Team #[66312996c6df79dd056a7a6c] is deleted.
+2024-04-30 12:25:54,449 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 12:25:54,916 INFO routes.team_routes:116 User [sam@uiowa.edu] is deleting team #663129a0c6df79dd056a7a70.
+2024-04-30 12:25:55,010 INFO routes.team_routes:133 	 Team #[663129a0c6df79dd056a7a70] is deleted.
+2024-04-30 12:25:55,048 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:35:49,817 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:36:09,397 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:36:14,133 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:36:15,927 INFO routes.team_routes:28 viewing team #66307a14ecbeb1beb69abab0 details.
+2024-04-30 12:36:25,578 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:36:35,109 INFO routes.users:39 User [sam@gam.com] is signing in the system.
+2024-04-30 12:36:35,428 WARN routes.users:48 	 User [sam@gam.com] signed in
+2024-04-30 12:36:41,769 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:38:07,440 INFO routes.team_routes:71 User [sam@gam.com] is creating an team.
+2024-04-30 12:38:07,487 INFO routes.player_routes:41 	 A new player #[66312c7fc6df79dd056a7a71] created.
+2024-04-30 12:38:07,518 INFO routes.player_routes:41 	 A new player #[66312c7fc6df79dd056a7a72] created.
+2024-04-30 12:38:07,549 INFO routes.player_routes:41 	 A new player #[66312c7fc6df79dd056a7a73] created.
+2024-04-30 12:38:07,581 INFO routes.team_routes:75 	 A new team #[66312c7fc6df79dd056a7a74] created.
+2024-04-30 12:38:07,623 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 12:38:15,760 INFO routes.team_routes:28 viewing team #66312c7fc6df79dd056a7a74 details.
+2024-04-30 12:38:45,768 INFO routes.team_routes:92 User [sam@gam.com] is updating team #66312c7fc6df79dd056a7a74.
+2024-04-30 12:38:45,857 INFO routes.team_routes:110 	 Team #[66312c7fc6df79dd056a7a74] is updated.
+2024-04-30 12:38:54,403 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 12:38:56,747 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #66312c7fc6df79dd056a7a74.
+2024-04-30 12:38:56,839 INFO routes.team_routes:133 	 Team #[66312c7fc6df79dd056a7a74] is deleted.
+2024-04-30 12:38:56,879 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:38:59,745 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 12:39:34,796 INFO routes.game_routes:38 User [sam@gam.com] is creating a game.
+2024-04-30 12:39:34,838 INFO routes.game_routes:40 	 A new game #[66312cd6c6df79dd056a7a75] created.
+2024-04-30 12:39:34,871 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 12:39:46,208 INFO routes.game_routes:38 User [sam@gam.com] is creating a game.
+2024-04-30 12:39:46,247 INFO routes.game_routes:40 	 A new game #[66312ce2c6df79dd056a7a76] created.
+2024-04-30 12:39:46,278 INFO routes.game_routes:18 viewing 8 games
+2024-04-30 12:39:52,661 INFO routes.game_routes:72 User [sam@gam.com] is deleting game #66312ce2c6df79dd056a7a76.
+2024-04-30 12:39:52,754 INFO routes.game_routes:89 	 Game #[66312ce2c6df79dd056a7a76] is deleted.
+2024-04-30 12:39:52,788 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 12:40:57,751 INFO routes.game_routes:38 User [sam@gam.com] is creating a game.
+2024-04-30 12:40:57,815 INFO routes.game_routes:40 	 A new game #[66312d29c6df79dd056a7a77] created.
+2024-04-30 12:40:57,848 INFO routes.game_routes:18 viewing 8 games
+2024-04-30 12:41:00,679 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 12:42:37,256 INFO routes.game_routes:18 viewing 8 games
+2024-04-30 12:44:48,246 INFO routes.game_routes:18 viewing 8 games
+2024-04-30 18:46:54,147 INFO run:24 Application starts up...
+2024-04-30 18:47:35,328 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 18:47:38,803 INFO routes.game_routes:18 viewing 8 games
+2024-04-30 18:49:49,329 INFO routes.game_routes:18 viewing 8 games
+2024-04-30 18:50:03,139 INFO routes.game_routes:18 viewing 8 games
+2024-04-30 18:50:06,552 INFO routes.team_routes:22 viewing 2 team
