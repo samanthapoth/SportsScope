@@ -98,7 +98,7 @@ This guide provides step-by-step instructions to set up an Angular front end and
      ```
    - For MacOS or Linux:
      ```
-     npm install papaparse
+     npm install ngx-papaparse
      ```
 
 7. **Run Development Server:**
