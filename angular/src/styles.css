@@ -1,0 +1,10 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  overflow: auto; /* Change overflow to auto */
+  background: linear-gradient(to bottom right, #2196f3, #03a9f4, #00bcd4, #009688); 
+}

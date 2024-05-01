@@ -1,0 +1,209 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-y: auto;
+}
+
+.main-container {
+    min-height: 100vh; 
+    overflow-y: auto; 
+    padding-bottom: 50px; 
+}
+
+.title-container {
+    margin-bottom: 20px; 
+    font-size:50px;
+    
+}
+
+h1 {
+    font-size: 36px; 
+}
+
+.author {
+    font-size: 18px; 
+    color: #666; 
+}
+
+button {
+    background-color: #325fc7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#eventDescriptionPopup {
+    display: block; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    cursor: pointer;
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px;
+    max-height: 500px;
+    overflow-y: auto; 
+}
+
+.event-teams {
+    color: #555;
+    margin-bottom: 2px;
+}
+
+.day {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 15px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.event {
+    background-color: lightblue;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 5px;
+}
+
+#weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: #ddd;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#monthNavigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+#monthNavigation span {
+    margin: 0 20px;
+    font-size: 24px;
+}
+
+.event {
+    font-weight: bold;
+    color: blue;
+}
+
+.score, .time {
+    font-size: 0.8em;
+    color: green;
+}
+
+.event {
+    margin-bottom: 10px;
+    padding: 5px;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);  
+}
+
+.event-title {
+    font-weight: bold;
+    margin-bottom: 4px; 
+}
+
+.event-details {
+    font-size: 0.9em;
+    color: #666;  
+    background-color: #eef; 
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.weekday, .day {
+    text-align: center;
+}
+
+.event {
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.event:hover {
+    background-color: #e0e0e0; 
+}
+
+.modal {
+    display: block; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

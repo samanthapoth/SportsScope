@@ -1,0 +1,124 @@
+<head><link rel="stylesheet" href="all.component.css"></head>
+
+<h2>Teams</h2>
+<div class="d-flex justify-content-end">
+  <button
+    type="button"
+    class="btn btn-outline-primary"
+    (click)="open(newModal)"
+  >
+    Add a New Team
+  </button>
+</div>
+<div class="table-responsive mt-2">
+  <table class="table table-striped table-hover table-bordered">
+    <thead class="table-dark">
+      <tr>
+        <th>Name</th>
+        <th>Location</th>
+        <th>Players</th>
+        <th>Creator</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of teams">
+        <td class="align-middle">{{ item.name }}</td>
+        <td class="align-middle">{{ item.location }}</td>
+        <td class="align-middle">
+          <div *ngFor="let player of item.players" class="badge text-bg-secondary me-1">
+            {{ player.name }} ({{ player.age }}), {{ player.position }}
+          </div>
+        </td>
+        <td class="align-middle">{{ item.creator }}</td>
+        <td>
+          <a class="btn btn-link" [routerLink]="item._id">Details</a>
+          <button
+            *ngIf="username === item.creator"
+            type="button"
+            class="btn btn-link text-danger"
+            (click)="delete(item._id)"
+          >
+            Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #newModal let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title" id="modal-title">Creating a new Team</h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss()"
+    ></button>
+  </div>
+  <div class="modal-body p-3">
+    <div class="mb-2">
+      <label for="name" class="fw-bold">Name</label>
+      <input type="text" class="form-control" id="title" [(ngModel)]="name" />
+    </div>
+    <div class="mb-2">
+      <label for="logo" class="fw-bold">Logo</label>
+      <input type="text" class="form-control" id="logo" [(ngModel)]="logo" />
+    </div>
+    <div class="mb-2">
+      <label for="location" class="fw-bold">Location</label>
+      <input
+        type="text"
+        class="form-control"
+        id="location"
+        [(ngModel)]="location"
+      />
+    </div>
+    <div class="mb-2">
+      <label for="csvFile" class="fw-bold">Upload Players (CSV)</label>
+      <input type="file" id="csvFile" (change)="onFileChange($event)" accept=".csv">
+      <button class="btn btn-primary mt-2" (click)="uploadCsv()">Upload CSV</button>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-dark me-2"
+      (click)="modal.close()"
+    >
+      Cancel
+    </button>
+    <button
+      type="button"
+      class="btn btn-primary"
+      (click)="create(createFinishDialog)"
+      [disabled]="busy"
+    >
+      <span *ngIf="!busy">Create</span>
+      <loading-bar *ngIf="busy">Creating...</loading-bar>
+    </button>
+  </div>
+</ng-template>
+
+<ng-template #createFinishDialog let-modal>
+  <div class="modal-header bg-success">
+    <h4 class="modal-title" id="modal-title">Successfully Created a Team</h4>
+    <button
+      type="button"
+      class="btn-close"
+      aria-label="Close"
+      (click)="modal.dismiss()"
+    ></button>
+  </div>
+  <div class="modal-body p-3">The team has been created.</div>
+  <div class="modal-footer">
+    <button
+      type="button"
+      class="btn btn-outline-dark me-2"
+      (click)="modal.close()"
+    >
+      Close
+    </button>
+  </div>
+</ng-template>
