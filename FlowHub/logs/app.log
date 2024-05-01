@@ -826,3 +826,15 @@
 2024-04-30 22:40:02,747 INFO routes.game_routes:18 viewing 6 games
 2024-04-30 22:40:03,038 INFO routes.game_routes:18 viewing 6 games
 2024-04-30 22:40:03,495 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 22:52:16,639 INFO run:24 Application starts up...
+2024-04-30 22:54:30,404 INFO routes.users:39 User [sam@gam.com] is signing in the system.
+2024-04-30 22:54:30,700 WARN routes.users:48 	 User [sam@gam.com] signed in
+2024-04-30 22:54:33,821 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:54:46,546 INFO routes.team_routes:71 User [sam@gam.com] is creating an team.
+2024-04-30 22:54:46,623 INFO routes.player_routes:41 	 A new player #[6631bd06c87962eb7d7915d1] created.
+2024-04-30 22:54:46,680 INFO routes.player_routes:41 	 A new player #[6631bd06c87962eb7d7915d2] created.
+2024-04-30 22:54:46,740 INFO routes.team_routes:75 	 A new team #[6631bd06c87962eb7d7915d3] created.
+2024-04-30 22:54:46,805 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 22:54:53,138 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6631bd06c87962eb7d7915d3.
+2024-04-30 22:54:53,308 INFO routes.team_routes:133 	 Team #[6631bd06c87962eb7d7915d3] is deleted.
+2024-04-30 22:54:53,368 INFO routes.team_routes:22 viewing 2 team
