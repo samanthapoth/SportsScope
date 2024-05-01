@@ -804,3 +804,25 @@
 2024-04-30 22:34:48,163 INFO routes.game_routes:18 viewing 7 games
 2024-04-30 22:34:48,877 INFO routes.team_routes:22 viewing 2 team
 2024-04-30 22:34:49,672 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:38:41,612 INFO routes.game_routes:72 User [sam@gam.com] is deleting game #66312cd6c6df79dd056a7a75.
+2024-04-30 22:38:41,777 INFO routes.game_routes:89 	 Game #[66312cd6c6df79dd056a7a75] is deleted.
+2024-04-30 22:38:41,839 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 22:38:43,788 INFO routes.game_routes:72 User [sam@gam.com] is deleting game #66311570eba5e23631a672f2.
+2024-04-30 22:39:49,265 INFO routes.game_routes:38 User [sam@gam.com] is creating a game.
+2024-04-30 22:39:49,337 INFO routes.game_routes:40 	 A new game #[6631b98597d2f501927aae7b] created.
+2024-04-30 22:39:49,393 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:39:53,287 INFO routes.game_routes:72 User [sam@gam.com] is deleting game #6631b98597d2f501927aae7b.
+2024-04-30 22:39:53,453 INFO routes.game_routes:89 	 Game #[6631b98597d2f501927aae7b] is deleted.
+2024-04-30 22:39:53,509 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 22:39:57,566 INFO routes.game_routes:38 User [sam@gam.com] is creating a game.
+2024-04-30 22:39:57,633 INFO routes.game_routes:40 	 A new game #[6631b98d97d2f501927aae7c] created.
+2024-04-30 22:39:57,690 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:39:59,591 INFO routes.game_routes:72 User [sam@gam.com] is deleting game #6631b98d97d2f501927aae7c.
+2024-04-30 22:39:59,765 INFO routes.game_routes:89 	 Game #[6631b98d97d2f501927aae7c] is deleted.
+2024-04-30 22:39:59,826 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 22:40:01,060 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 22:40:01,532 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 22:40:01,902 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 22:40:02,747 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 22:40:03,038 INFO routes.game_routes:18 viewing 6 games
+2024-04-30 22:40:03,495 INFO routes.game_routes:18 viewing 6 games
