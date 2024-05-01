@@ -1,4 +1,6 @@
-<h2 style="color: white; margin-left: 1%; margin-top: 1%;">Games</h2>
+<div class="title-container">
+    Game Calendar
+</div>
 <div class="main-container">
 <!-- Embedded Event Form -->
 <button (click)="toggleAddEventModal()">Add New Game</button>
@@ -60,14 +62,29 @@
 <div *ngIf="showEventDetails" id="eventDescriptionPopup" class="modal">
     <div class="modal-content">
         <span class="close" (click)="closeEventDetails()">&times;</span>
-        <h2>{{ selectedEvent?.name }}</h2>
-        <p><strong>Date:</strong> {{ selectedEvent?.date | date:'fullDate' }}</p>
-        <p><strong>Time:</strong> {{ selectedEvent?.time }}</p>
-        <p><strong>Location:</strong> {{ selectedEvent?.location }}</p>
-        <p><strong>Teams:</strong> {{ selectedEvent?.home_team }} vs {{ selectedEvent?.away_team }}</p>
-        <p *ngIf="selectedEvent?.played"><strong>Score:</strong> {{ selectedEvent?.home_team_score }} - {{ selectedEvent?.away_team_score }}</p>
-        <p *ngIf="!selectedEvent?.played"><strong>Status:</strong> Scheduled</p>
+        <form #updateEventForm="ngForm" (ngSubmit)="updateEvent(updateEventForm.value)">
+            <h2>Edit Event Details</h2>
+            <p><strong>Name:</strong> <input type="text" [(ngModel)]="selectedEvent.name" name="eventName" required></p>
+            <p><strong>Date:</strong> <input type="date" [(ngModel)]="selectedEvent.date" name="eventDate" required></p>
+            <p><strong>Time:</strong> <input type="time" [(ngModel)]="selectedEvent.time" name="eventTime" required></p>
+            <p><strong>Location:</strong> <input type="text" [(ngModel)]="selectedEvent.location" name="eventLocation" required></p>
+            <p><strong>Home Team:</strong> <input type="text" [(ngModel)]="selectedEvent.home_team" name="homeTeam" required></p>
+            <p><strong>Away Team:</strong> <input type="text" [(ngModel)]="selectedEvent.away_team" name="awayTeam" required></p>
+            <p>
+                <strong>Played:</strong>
+                <input type="checkbox" [(ngModel)]="selectedEvent.played" name="played">
+            </p>
+            <div *ngIf="selectedEvent.played">
+                <p><strong>Score:</strong>
+                    <input type="number" [(ngModel)]="selectedEvent.home_team_score" name="homeScore" required> - 
+                    <input type="number" [(ngModel)]="selectedEvent.away_team_score" name="awayScore" required>
+                </p>
+            </div>
+            <button type="submit">Save Changes</button>
+        </form>
         <button (click)="removeEvent(selectedEvent)">Remove Event</button>
     </div>
 </div>
+
+
 

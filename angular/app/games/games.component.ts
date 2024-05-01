@@ -15,7 +15,18 @@ export class GamesComponent implements OnInit {
   showEventForm: boolean = false;
   showEventDetails: boolean = false;
   showAddEventModal: boolean = false;
-  selectedEvent: Game | null = null;
+  selectedEvent: Game = {
+    _id: '',
+    name: '',
+    location: '',
+    home_team: '',
+    away_team: '',
+    date: '',
+    time: '',
+    played: false,
+    home_team_score: 0,
+    away_team_score: 0
+  };
   newGame: Game = {
     name: '',
     location: '',
@@ -27,6 +38,7 @@ export class GamesComponent implements OnInit {
     home_team_score: 0,
     away_team_score: 0
   };
+  
 
   constructor(private cdr: ChangeDetectorRef, private gamesService: GamesService) {}
 
@@ -135,15 +147,15 @@ export class GamesComponent implements OnInit {
   
     const updatedGame: Game = {
       _id: this.selectedEvent._id,
-      name: form.value.eventName,
-      location: form.value.location,
-      home_team: form.value.home_team,
-      away_team: form.value.away_team,
-      date: form.value.date,
-      time: form.value.time,
-      played: this.selectedEvent.played,
-      home_team_score: form.value.home_team_score || this.selectedEvent.home_team_score,
-      away_team_score: form.value.away_team_score || this.selectedEvent.away_team_score
+      name: form.eventName,
+      location: form.eventLocation,
+      home_team: form.homeTeam,
+      away_team: form.awayTeam,
+      date: form.eventDate,
+      time: form.eventTime,
+      played: form.played,
+      home_team_score: form.played ? form.homeScore : null,
+      away_team_score: form.played ? form.awayScore : null
     };
   
     this.gamesService.updateGame(this.selectedEvent._id, updatedGame).subscribe({
@@ -157,4 +169,4 @@ export class GamesComponent implements OnInit {
       }
     });
   }
-}
+}  
