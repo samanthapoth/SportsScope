@@ -665,3 +665,121 @@
 2024-04-30 22:05:10,836 INFO routes.team_routes:75 	 A new team #[6631b16697d2f501927aae61] created.
 2024-04-30 22:05:10,899 INFO routes.team_routes:22 viewing 5 team
 2024-04-30 22:05:12,739 INFO routes.team_routes:28 viewing team #6631b16697d2f501927aae61 details.
+2024-04-30 22:07:35,178 INFO routes.users:21 User [sam@sam.com] is signing up.
+2024-04-30 22:07:35,560 INFO routes.users:33 	 User [sam@sam.com] is created.
+2024-04-30 22:08:43,359 INFO routes.team_routes:22 viewing 5 team
+2024-04-30 22:08:53,654 INFO routes.users:39 User [samantha-pothitakis@uiowa.edu] is signing in the system.
+2024-04-30 22:08:53,940 WARN routes.users:48 	 User [samantha-pothitakis@uiowa.edu] signed in
+2024-04-30 22:08:55,545 INFO routes.team_routes:22 viewing 5 team
+2024-04-30 22:08:56,362 INFO routes.team_routes:116 User [samantha-pothitakis@uiowa.edu] is deleting team #66307a14ecbeb1beb69abab0.
+2024-04-30 22:08:56,534 INFO routes.team_routes:133 	 Team #[66307a14ecbeb1beb69abab0] is deleted.
+2024-04-30 22:08:56,592 INFO routes.team_routes:22 viewing 4 team
+2024-04-30 22:08:56,884 INFO routes.team_routes:116 User [samantha-pothitakis@uiowa.edu] is deleting team #663089112a8b65297739a2ff.
+2024-04-30 22:08:57,053 INFO routes.team_routes:133 	 Team #[663089112a8b65297739a2ff] is deleted.
+2024-04-30 22:08:57,114 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 22:09:02,317 INFO routes.users:39 User [sam@gam.com] is signing in the system.
+2024-04-30 22:09:02,613 WARN routes.users:48 	 User [sam@gam.com] signed in
+2024-04-30 22:09:03,934 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 22:09:05,010 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6631b03e97d2f501927aae59.
+2024-04-30 22:09:05,179 INFO routes.team_routes:133 	 Team #[6631b03e97d2f501927aae59] is deleted.
+2024-04-30 22:09:05,240 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:09:05,385 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6631b10a97d2f501927aae5d.
+2024-04-30 22:09:05,546 INFO routes.team_routes:133 	 Team #[6631b10a97d2f501927aae5d] is deleted.
+2024-04-30 22:09:05,605 INFO routes.team_routes:22 viewing 1 team
+2024-04-30 22:09:05,955 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6631b16697d2f501927aae61.
+2024-04-30 22:09:06,132 INFO routes.team_routes:133 	 Team #[6631b16697d2f501927aae61] is deleted.
+2024-04-30 22:09:06,190 INFO routes.team_routes:22 viewing 0 team
+2024-04-30 22:10:10,794 INFO routes.team_routes:71 User [sam@gam.com] is creating an team.
+2024-04-30 22:10:10,869 INFO routes.player_routes:41 	 A new player #[6631b29297d2f501927aae63] created.
+2024-04-30 22:10:10,925 INFO routes.player_routes:41 	 A new player #[6631b29297d2f501927aae64] created.
+2024-04-30 22:10:10,982 INFO routes.player_routes:41 	 A new player #[6631b29297d2f501927aae65] created.
+2024-04-30 22:10:11,041 INFO routes.team_routes:75 	 A new team #[6631b29297d2f501927aae66] created.
+2024-04-30 22:10:11,109 INFO routes.team_routes:22 viewing 1 team
+2024-04-30 22:10:12,978 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6631b29297d2f501927aae66.
+2024-04-30 22:10:13,154 INFO routes.team_routes:133 	 Team #[6631b29297d2f501927aae66] is deleted.
+2024-04-30 22:10:13,213 INFO routes.team_routes:22 viewing 0 team
+2024-04-30 22:10:31,192 INFO routes.team_routes:71 User [sam@gam.com] is creating an team.
+2024-04-30 22:10:31,254 INFO routes.player_routes:41 	 A new player #[6631b2a797d2f501927aae67] created.
+2024-04-30 22:10:31,310 INFO routes.player_routes:41 	 A new player #[6631b2a797d2f501927aae68] created.
+2024-04-30 22:10:31,372 INFO routes.player_routes:41 	 A new player #[6631b2a797d2f501927aae69] created.
+2024-04-30 22:10:31,431 INFO routes.team_routes:75 	 A new team #[6631b2a797d2f501927aae6a] created.
+2024-04-30 22:10:31,498 INFO routes.team_routes:22 viewing 1 team
+2024-04-30 22:13:27,698 INFO routes.team_routes:71 User [sam@gam.com] is creating an team.
+2024-04-30 22:13:27,780 INFO routes.player_routes:41 	 A new player #[6631b35797d2f501927aae6b] created.
+2024-04-30 22:13:27,839 INFO routes.player_routes:41 	 A new player #[6631b35797d2f501927aae6c] created.
+2024-04-30 22:13:27,896 INFO routes.player_routes:41 	 A new player #[6631b35797d2f501927aae6d] created.
+2024-04-30 22:13:27,955 INFO routes.team_routes:75 	 A new team #[6631b35797d2f501927aae6e] created.
+2024-04-30 22:13:28,015 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:13:31,235 INFO routes.team_routes:28 viewing team #6631b35797d2f501927aae6e details.
+2024-04-30 22:13:33,436 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:13:34,211 INFO routes.team_routes:28 viewing team #6631b2a797d2f501927aae6a details.
+2024-04-30 22:13:35,079 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:13:35,918 INFO routes.team_routes:28 viewing team #6631b35797d2f501927aae6e details.
+2024-04-30 22:13:47,442 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:13:49,929 INFO routes.team_routes:28 viewing team #6631b2a797d2f501927aae6a details.
+2024-04-30 22:13:57,061 INFO routes.team_routes:92 User [sam@gam.com] is updating team #6631b2a797d2f501927aae6a.
+2024-04-30 22:13:57,231 INFO routes.team_routes:110 	 Team #[6631b2a797d2f501927aae6a] is updated.
+2024-04-30 22:13:59,613 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:14:03,217 INFO routes.team_routes:28 viewing team #6631b35797d2f501927aae6e details.
+2024-04-30 22:14:11,044 INFO routes.team_routes:92 User [sam@gam.com] is updating team #6631b35797d2f501927aae6e.
+2024-04-30 22:14:11,206 INFO routes.team_routes:110 	 Team #[6631b35797d2f501927aae6e] is updated.
+2024-04-30 22:15:37,514 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:16:39,864 INFO routes.team_routes:71 User [sam@gam.com] is creating an team.
+2024-04-30 22:16:39,941 INFO routes.player_routes:41 	 A new player #[6631b41797d2f501927aae6f] created.
+2024-04-30 22:16:40,000 INFO routes.player_routes:41 	 A new player #[6631b41797d2f501927aae70] created.
+2024-04-30 22:16:40,061 INFO routes.player_routes:41 	 A new player #[6631b41897d2f501927aae71] created.
+2024-04-30 22:16:40,122 INFO routes.team_routes:75 	 A new team #[6631b41897d2f501927aae72] created.
+2024-04-30 22:16:40,185 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 22:20:19,009 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:20:22,010 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:20:50,236 INFO routes.users:39 User [samantha-pothitakis@uiowa.edu] is signing in the system.
+2024-04-30 22:20:50,540 WARN routes.users:48 	 User [samantha-pothitakis@uiowa.edu] signed in
+2024-04-30 22:20:50,615 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:24:07,019 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:24:09,584 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 22:24:23,762 INFO routes.team_routes:71 User [samantha-pothitakis@uiowa.edu] is creating an team.
+2024-04-30 22:24:23,845 INFO routes.player_routes:41 	 A new player #[6631b5e797d2f501927aae73] created.
+2024-04-30 22:24:23,902 INFO routes.player_routes:41 	 A new player #[6631b5e797d2f501927aae74] created.
+2024-04-30 22:24:23,959 INFO routes.player_routes:41 	 A new player #[6631b5e797d2f501927aae75] created.
+2024-04-30 22:24:24,015 INFO routes.team_routes:75 	 A new team #[6631b5e797d2f501927aae76] created.
+2024-04-30 22:24:24,097 INFO routes.team_routes:22 viewing 4 team
+2024-04-30 22:24:50,413 INFO routes.team_routes:71 User [samantha-pothitakis@uiowa.edu] is creating an team.
+2024-04-30 22:24:50,477 INFO routes.player_routes:41 	 A new player #[6631b60297d2f501927aae77] created.
+2024-04-30 22:24:50,534 INFO routes.player_routes:41 	 A new player #[6631b60297d2f501927aae78] created.
+2024-04-30 22:24:50,593 INFO routes.player_routes:41 	 A new player #[6631b60297d2f501927aae79] created.
+2024-04-30 22:24:50,651 INFO routes.team_routes:75 	 A new team #[6631b60297d2f501927aae7a] created.
+2024-04-30 22:24:50,718 INFO routes.team_routes:22 viewing 5 team
+2024-04-30 22:24:51,751 INFO routes.team_routes:116 User [samantha-pothitakis@uiowa.edu] is deleting team #6631b60297d2f501927aae7a.
+2024-04-30 22:24:51,926 INFO routes.team_routes:133 	 Team #[6631b60297d2f501927aae7a] is deleted.
+2024-04-30 22:24:51,984 INFO routes.team_routes:22 viewing 4 team
+2024-04-30 22:24:52,563 INFO routes.team_routes:116 User [samantha-pothitakis@uiowa.edu] is deleting team #6631b5e797d2f501927aae76.
+2024-04-30 22:24:52,729 INFO routes.team_routes:133 	 Team #[6631b5e797d2f501927aae76] is deleted.
+2024-04-30 22:24:52,788 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 22:26:04,311 INFO routes.users:39 User [sam@gam.com] is signing in the system.
+2024-04-30 22:26:04,591 WARN routes.users:48 	 User [sam@gam.com] signed in
+2024-04-30 22:26:05,974 INFO routes.team_routes:22 viewing 3 team
+2024-04-30 22:26:09,301 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6631b41897d2f501927aae72.
+2024-04-30 22:26:09,470 INFO routes.team_routes:133 	 Team #[6631b41897d2f501927aae72] is deleted.
+2024-04-30 22:26:09,529 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:26:20,087 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:26:20,643 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:26:21,825 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:26:23,483 INFO routes.team_routes:28 viewing team #6631b35797d2f501927aae6e details.
+2024-04-30 22:26:26,253 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:27:08,077 INFO routes.team_routes:28 viewing team #6631b35797d2f501927aae6e details.
+2024-04-30 22:29:20,028 INFO routes.team_routes:28 viewing team #6631b35797d2f501927aae6e details.
+2024-04-30 22:29:38,681 INFO routes.team_routes:92 User [sam@gam.com] is updating team #6631b35797d2f501927aae6e.
+2024-04-30 22:29:38,872 INFO routes.team_routes:110 	 Team #[6631b35797d2f501927aae6e] is updated.
+2024-04-30 22:29:43,151 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:29:58,271 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:29:58,732 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:29:59,222 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:30:00,925 INFO routes.team_routes:28 viewing team #6631b35797d2f501927aae6e details.
+2024-04-30 22:30:10,981 INFO routes.team_routes:92 User [sam@gam.com] is updating team #6631b35797d2f501927aae6e.
+2024-04-30 22:30:11,150 INFO routes.team_routes:110 	 Team #[6631b35797d2f501927aae6e] is updated.
+2024-04-30 22:30:16,472 INFO routes.team_routes:92 User [sam@gam.com] is updating team #6631b35797d2f501927aae6e.
+2024-04-30 22:30:16,641 INFO routes.team_routes:110 	 Team #[6631b35797d2f501927aae6e] is updated.
+2024-04-30 22:30:21,502 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:30:24,544 INFO routes.team_routes:28 viewing team #6631b35797d2f501927aae6e details.
+2024-04-30 22:30:29,127 INFO routes.team_routes:92 User [sam@gam.com] is updating team #6631b35797d2f501927aae6e.
+2024-04-30 22:30:29,299 INFO routes.team_routes:110 	 Team #[6631b35797d2f501927aae6e] is updated.

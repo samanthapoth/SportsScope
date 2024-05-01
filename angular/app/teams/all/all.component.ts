@@ -99,11 +99,18 @@ export class AllComponent implements OnInit {
   }
 
   create(content: any): void {
+    // Check if all required fields are filled
+    if (!this.name.trim() || !this.logo.trim() || !this.location.trim()) {
+      alert("Please fill out all fields (name, logo, and location).");
+      return;
+    }
+  
+    // Check if at least one player has been added
     if (this.players.length === 0) {
       alert("Please add at least one player.");
       return;
     }
-
+  
     this.busy = true;
     this.svc.createTeam(this.name, this.logo, this.players, this.location)
       .pipe(finalize(() => {
@@ -122,7 +129,7 @@ export class AllComponent implements OnInit {
         }
       });
   }
-
+  
   resetForm(): void {
     this.name = '';
     this.logo = '';
