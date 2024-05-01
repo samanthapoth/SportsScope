@@ -149,11 +149,8 @@ To add a new game, the user will open up a form shown in the image below. The us
 
 <img width="300" alt="Screenshot 2024-04-30 at 10 38 58 PM" src="https://github.com/samanthapoth/SportsScope/assets/90707077/0ebc3ce8-6d2a-4f1e-ae33-192b225c5747">
 
-When viewing a game as shown in the image below, the "Remove Event" button cannot be pressed unless the creator of that game is the user logged in and operating the app. No action will occur if the user unauthorized to delete a game tries to delete one.
 
-<img width="300" alt="Screenshot 2024-04-30 at 10 41 56 PM" src="https://github.com/samanthapoth/SportsScope/assets/90707077/038dcce8-aca2-4c90-afac-855ac646c091">
-
-Admins can edit all the details of a game with the new edit feature, mark a game as played, and enter the final score, which updates the event on the calendar.
+Logged in users can edit all the details of a game with the edit feature, mark a game as played, and enter the final score. This updates the event on the calendar. When viewing a game as shown in the image below, the "Remove Event" button cannot be pressed unless the creator of that game is the user logged in and operating the app. No action will occur if the user unauthorized to delete a game tries to delete one.
 
 <img width ="300" alt = "editscreen" src = "angular/app/games/EDITSCREEN.png">
 
