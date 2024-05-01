@@ -783,3 +783,24 @@
 2024-04-30 22:30:24,544 INFO routes.team_routes:28 viewing team #6631b35797d2f501927aae6e details.
 2024-04-30 22:30:29,127 INFO routes.team_routes:92 User [sam@gam.com] is updating team #6631b35797d2f501927aae6e.
 2024-04-30 22:30:29,299 INFO routes.team_routes:110 	 Team #[6631b35797d2f501927aae6e] is updated.
+2024-04-30 22:32:15,792 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:32:26,380 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:32:27,146 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:32:28,505 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:33:08,073 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:33:10,614 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:33:45,231 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:33:46,672 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:33:48,519 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:33:57,002 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:33:58,783 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:34:08,236 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:34:20,640 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:34:28,442 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:34:32,268 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:34:43,848 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:34:45,628 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:34:47,601 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:34:48,163 INFO routes.game_routes:18 viewing 7 games
+2024-04-30 22:34:48,877 INFO routes.team_routes:22 viewing 2 team
+2024-04-30 22:34:49,672 INFO routes.game_routes:18 viewing 7 games
