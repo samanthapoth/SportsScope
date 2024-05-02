@@ -62,31 +62,31 @@
 <div *ngIf="showEventDetails" id="eventDescriptionPopup" class="modal">
     <div class="modal-content">
         <span class="close" (click)="closeEventDetails()">&times;</span>
-        <form #updateEventForm="ngForm" (ngSubmit)="updateEvent(updateEventForm.value)">
-            <h2>Edit Event Details</h2>
+        <form #updateEventForm="ngForm" (ngSubmit)="updateEvent()">
+            <!-- Dynamic modal header using the name of the game -->
+            <h2>{{ selectedEvent.name }}</h2>
+            <!-- Editing mode indicator -->
+            <div *ngIf="editMode" class="edit-indicator">
+                <p style="color: red; font-size: smaller;">Editing Mode (Changes will be automatically saved)</p>
+            </div>
+            <!-- Form fields -->
             <p><strong>Name:</strong> 
-                <input type="text" [(ngModel)]="selectedEvent.name" name="eventName" [readonly]="!editStates['name']" required>
-                <button type="button" (click)="toggleEdit('name')">Edit</button>
+                <input type="text" [(ngModel)]="selectedEvent.name" name="eventName" [readonly]="!editMode" required>
             </p>
             <p><strong>Date:</strong> 
-                <input type="date" [(ngModel)]="selectedEvent.date" name="eventDate" [readonly]="!editStates['date']" required>
-                <button type="button" (click)="toggleEdit('date')">Edit</button>
+                <input type="date" [(ngModel)]="selectedEvent.date" name="eventDate" [readonly]="!editMode" required>
             </p>
             <p><strong>Time:</strong> 
-                <input type="time" [(ngModel)]="selectedEvent.time" name="eventTime" [readonly]="!editStates['time']" required>
-                <button type="button" (click)="toggleEdit('time')">Edit</button>
+                <input type="time" [(ngModel)]="selectedEvent.time" name="eventTime" [readonly]="!editMode" required>
             </p>
             <p><strong>Location:</strong> 
-                <input type="text" [(ngModel)]="selectedEvent.location" name="eventLocation" [readonly]="!editStates['location']" required>
-                <button type="button" (click)="toggleEdit('location')">Edit</button>
+                <input type="text" [(ngModel)]="selectedEvent.location" name="eventLocation" [readonly]="!editMode" required>
             </p>
             <p><strong>Home Team:</strong> 
-                <input type="text" [(ngModel)]="selectedEvent.home_team" name="homeTeam" [readonly]="!editStates['home_team']" required>
-                <button type="button" (click)="toggleEdit('home_team')">Edit</button>
+                <input type="text" [(ngModel)]="selectedEvent.home_team" name="homeTeam" [readonly]="!editMode" required>
             </p>
             <p><strong>Away Team:</strong> 
-                <input type="text" [(ngModel)]="selectedEvent.away_team" name="awayTeam" [readonly]="!editStates['away_team']" required>
-                <button type="button" (click)="toggleEdit('away_team')">Edit</button>
+                <input type="text" [(ngModel)]="selectedEvent.away_team" name="awayTeam" [readonly]="!editMode" required>
             </p>
             <p>
                 <strong>Played:</strong>
@@ -94,11 +94,11 @@
             </p>
             <div *ngIf="selectedEvent.played">
                 <p><strong>Score:</strong>
-                    <input type="number" [(ngModel)]="selectedEvent.home_team_score" name="homeScore" [readonly]="!editStates['score']" required> - 
-                    <input type="number" [(ngModel)]="selectedEvent.away_team_score" name="awayScore" [readonly]="!editStates['score']" required>
+                    <input type="number" [(ngModel)]="selectedEvent.home_team_score" name="homeScore" [readonly]="!editMode" required> - 
+                    <input type="number" [(ngModel)]="selectedEvent.away_team_score" name="awayScore" [readonly]="!editMode" required>
                 </p>
-                <button type="button" (click)="toggleEdit('score')">Edit Score</button>
             </div>
+            <button type="button" (click)="toggleEdit()">{{ editMode ? 'Finish Editing' : 'Edit' }}</button>
         </form>
         <button (click)="removeEvent(selectedEvent)">Remove Event</button>
     </div>

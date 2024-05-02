@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef, ViewChild  } from '@angular/core';
 import { GamesService } from './games.service';
 import { Game } from './game.model';
 import { NgForm } from '@angular/forms';
@@ -12,6 +12,8 @@ import { NgForm } from '@angular/forms';
 export class GamesComponent implements OnInit {
   currentMonth: string = "";
   days: any[] = [];
+  @ViewChild('updateEventForm') updateEventForm!: NgForm;
+  editMode: boolean = false;
   showEventForm: boolean = false;
   showEventDetails: boolean = false;
   showAddEventModal: boolean = false;
@@ -76,10 +78,11 @@ export class GamesComponent implements OnInit {
       this.selectedEvent.away_team_score = 0
     }
   }
-
-  toggleEdit(field: string): void {
-    this.editStates[field] = !this.editStates[field];
+  
+  toggleEdit(): void {
+    this.editMode = !this.editMode;
   }
+
 
   changeMonth(offset: number) {
     const current = new Date(this.currentMonth + " 1");
@@ -163,31 +166,34 @@ export class GamesComponent implements OnInit {
   }
   
 
-  updateEvent(form: any) {
-    if (!this.selectedEvent || !this.selectedEvent._id) return;
+  updateEvent() {
+    if (this.editMode && this.updateEventForm.valid && this.selectedEvent._id) { // Check that _id is not undefined
+      const updatedGame: Game = {
+        _id: this.selectedEvent._id,
+        name: this.selectedEvent.name,
+        location: this.selectedEvent.location,
+        home_team: this.selectedEvent.home_team,
+        away_team: this.selectedEvent.away_team,
+        date: this.selectedEvent.date,
+        time: this.selectedEvent.time,
+        played: this.selectedEvent.played,
+        home_team_score: this.selectedEvent.home_team_score,
+        away_team_score: this.selectedEvent.away_team_score
+      };
   
-    const updatedGame: Game = {
-      _id: this.selectedEvent._id,
-      name: form.eventName,
-      location: form.eventLocation,
-      home_team: form.homeTeam,
-      away_team: form.awayTeam,
-      date: form.eventDate,
-      time: form.eventTime,
-      played: form.played,
-      home_team_score: form.played ? form.homeScore : null,
-      away_team_score: form.played ? form.awayScore : null
-    };
-  
-    this.gamesService.updateGame(this.selectedEvent._id, updatedGame).subscribe({
-      next: () => {
-        this.fetchEvents(); // Refresh events on successful update
-        this.closeEventDetails(); // Close details view on success
-      },
-      error: (err) => {
-        console.error('Error updating game:', err);
-        this.closeEventDetails(); // Close details view on error
-      }
-    });
+      this.gamesService.updateGame(this.selectedEvent._id, updatedGame).subscribe({
+        next: () => {
+          this.fetchEvents(); // Refresh events on successful update
+          this.closeEventDetails(); // Close details view on success
+          this.toggleEdit(); // Turn off edit mode after updating
+        },
+        error: (err) => {
+          console.error('Error updating game:', err);
+          this.closeEventDetails(); // Close details view on error
+        }
+      });
+    } else {
+      console.error('Attempted to update with undefined ID or invalid form');
+    }
   }
 }  
