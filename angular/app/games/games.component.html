@@ -64,27 +64,42 @@
         <span class="close" (click)="closeEventDetails()">&times;</span>
         <form #updateEventForm="ngForm" (ngSubmit)="updateEvent(updateEventForm.value)">
             <h2>Edit Event Details</h2>
-            <p><strong>Name:</strong> <input type="text" [(ngModel)]="selectedEvent.name" name="eventName" required></p>
-            <p><strong>Date:</strong> <input type="date" [(ngModel)]="selectedEvent.date" name="eventDate" required></p>
-            <p><strong>Time:</strong> <input type="time" [(ngModel)]="selectedEvent.time" name="eventTime" required></p>
-            <p><strong>Location:</strong> <input type="text" [(ngModel)]="selectedEvent.location" name="eventLocation" required></p>
-            <p><strong>Home Team:</strong> <input type="text" [(ngModel)]="selectedEvent.home_team" name="homeTeam" required></p>
-            <p><strong>Away Team:</strong> <input type="text" [(ngModel)]="selectedEvent.away_team" name="awayTeam" required></p>
+            <p><strong>Name:</strong> 
+                <input type="text" [(ngModel)]="selectedEvent.name" name="eventName" [readonly]="!editStates['name']" required>
+                <button type="button" (click)="toggleEdit('name')">Edit</button>
+            </p>
+            <p><strong>Date:</strong> 
+                <input type="date" [(ngModel)]="selectedEvent.date" name="eventDate" [readonly]="!editStates['date']" required>
+                <button type="button" (click)="toggleEdit('date')">Edit</button>
+            </p>
+            <p><strong>Time:</strong> 
+                <input type="time" [(ngModel)]="selectedEvent.time" name="eventTime" [readonly]="!editStates['time']" required>
+                <button type="button" (click)="toggleEdit('time')">Edit</button>
+            </p>
+            <p><strong>Location:</strong> 
+                <input type="text" [(ngModel)]="selectedEvent.location" name="eventLocation" [readonly]="!editStates['location']" required>
+                <button type="button" (click)="toggleEdit('location')">Edit</button>
+            </p>
+            <p><strong>Home Team:</strong> 
+                <input type="text" [(ngModel)]="selectedEvent.home_team" name="homeTeam" [readonly]="!editStates['home_team']" required>
+                <button type="button" (click)="toggleEdit('home_team')">Edit</button>
+            </p>
+            <p><strong>Away Team:</strong> 
+                <input type="text" [(ngModel)]="selectedEvent.away_team" name="awayTeam" [readonly]="!editStates['away_team']" required>
+                <button type="button" (click)="toggleEdit('away_team')">Edit</button>
+            </p>
             <p>
                 <strong>Played:</strong>
-                <input type="checkbox" [(ngModel)]="selectedEvent.played" name="played">
+                <input type="checkbox" id="played" name="played" [(ngModel)]="selectedEvent.played" (change)="onPlayedStatusChange()">
             </p>
             <div *ngIf="selectedEvent.played">
                 <p><strong>Score:</strong>
-                    <input type="number" [(ngModel)]="selectedEvent.home_team_score" name="homeScore" required> - 
-                    <input type="number" [(ngModel)]="selectedEvent.away_team_score" name="awayScore" required>
+                    <input type="number" [(ngModel)]="selectedEvent.home_team_score" name="homeScore" [readonly]="!editStates['score']" required> - 
+                    <input type="number" [(ngModel)]="selectedEvent.away_team_score" name="awayScore" [readonly]="!editStates['score']" required>
                 </p>
+                <button type="button" (click)="toggleEdit('score')">Edit Score</button>
             </div>
-            <button type="submit">Save Changes</button>
         </form>
         <button (click)="removeEvent(selectedEvent)">Remove Event</button>
     </div>
 </div>
-
-
-

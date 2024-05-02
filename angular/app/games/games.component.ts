@@ -38,7 +38,17 @@ export class GamesComponent implements OnInit {
     home_team_score: 0,
     away_team_score: 0
   };
+  editStates: { [key: string]: boolean } = {
+    name: false,
+    date: false,
+    time: false,
+    location: false,
+    home_team: false,
+    away_team: false,
+    score: false
+  };
   
+
 
   constructor(private cdr: ChangeDetectorRef, private gamesService: GamesService) {}
 
@@ -60,6 +70,16 @@ export class GamesComponent implements OnInit {
   toggleAddEventModal(): void {
     this.showAddEventModal = !this.showAddEventModal;
   }
+  onPlayedStatusChange(): void {
+    if (!this.selectedEvent.played) {
+      this.selectedEvent.home_team_score = 0
+      this.selectedEvent.away_team_score = 0
+    }
+  }
+
+  toggleEdit(field: string): void {
+    this.editStates[field] = !this.editStates[field];
+  }
 
   changeMonth(offset: number) {
     const current = new Date(this.currentMonth + " 1");
@@ -67,6 +87,7 @@ export class GamesComponent implements OnInit {
     this.loadMonth(current);
     this.cdr.detectChanges();
   }
+  
 
   loadMonth(date: Date) {
     this.currentMonth = date.toLocaleString('default', { month: 'long', year: 'numeric' });
@@ -105,7 +126,7 @@ export class GamesComponent implements OnInit {
           // Ensure only adding events of the current month
           if (gameDate.getMonth() === monthStart.getMonth() && gameDate.getFullYear() === monthStart.getFullYear()) {
             const index = gameDate.getDate() + firstDayOfMonth; 
-            if (index >= 0 && index < this.days.length) {
+            if (index >= 0 && index <= this.days.length) {
               this.days[index].events.push(game);
             }
           }
