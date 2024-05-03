@@ -102,7 +102,6 @@ export class DetailsComponent {
           };
           players.push(player);
         }
-        alert('File uploaded successfully!');
       }
     };
   
