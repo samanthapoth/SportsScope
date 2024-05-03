@@ -969,3 +969,105 @@
 2024-05-01 01:57:58,359 INFO routes.game_routes:72 User [samantha-pothitakis@uiowa.edu] is deleting game #6631e7f4dce0aa3d296ca5f0.
 2024-05-01 01:57:58,527 INFO routes.game_routes:89 	 Game #[6631e7f4dce0aa3d296ca5f0] is deleted.
 2024-05-01 01:57:58,589 INFO routes.game_routes:18 viewing 6 games
+2024-05-01 18:24:06,556 INFO run:24 Application starts up...
+2024-05-01 18:25:07,366 INFO routes.team_routes:22 viewing 2 team
+2024-05-01 18:25:16,278 INFO routes.users:39 User [samantha-pothitakis@uiowa.edu] is signing in the system.
+2024-05-01 18:25:16,566 WARN routes.users:48 	 User [samantha-pothitakis@uiowa.edu] signed in
+2024-05-01 18:25:18,524 INFO routes.team_routes:22 viewing 2 team
+2024-05-01 18:25:19,298 INFO routes.team_routes:116 User [samantha-pothitakis@uiowa.edu] is deleting team #6631e7a1dce0aa3d296ca5ef.
+2024-05-01 18:25:19,391 INFO routes.team_routes:133 	 Team #[6631e7a1dce0aa3d296ca5ef] is deleted.
+2024-05-01 18:25:19,426 INFO routes.team_routes:22 viewing 1 team
+2024-05-01 18:25:21,880 INFO routes.game_routes:18 viewing 7 games
+2024-05-01 18:25:30,782 INFO routes.game_routes:48 User [samantha-pothitakis@uiowa.edu] is updating game #66326b3deba5e23631a672d7.
+2024-05-01 18:25:34,598 INFO routes.game_routes:72 User [samantha-pothitakis@uiowa.edu] is deleting game #66326b3deba5e23631a672d7.
+2024-05-01 18:25:35,201 INFO routes.game_routes:72 User [samantha-pothitakis@uiowa.edu] is deleting game #66326b3deba5e23631a672d7.
+2024-05-01 18:25:35,481 INFO routes.game_routes:72 User [samantha-pothitakis@uiowa.edu] is deleting game #66326b3deba5e23631a672d7.
+2024-05-01 18:25:39,022 INFO routes.game_routes:48 User [samantha-pothitakis@uiowa.edu] is updating game #66326b3deba5e23631a672d7.
+2024-05-01 18:26:05,841 INFO routes.game_routes:38 User [samantha-pothitakis@uiowa.edu] is creating a game.
+2024-05-01 18:26:05,898 INFO routes.game_routes:40 	 A new game #[6632cf8d18b378776d20e76b] created.
+2024-05-01 18:26:05,929 INFO routes.game_routes:18 viewing 8 games
+2024-05-01 18:26:14,138 INFO routes.game_routes:48 User [samantha-pothitakis@uiowa.edu] is updating game #6632cf8d18b378776d20e76b.
+2024-05-01 18:26:14,234 INFO routes.game_routes:66 	 Game #[6632cf8d18b378776d20e76b] is updated.
+2024-05-01 18:26:14,267 INFO routes.game_routes:18 viewing 8 games
+2024-05-01 18:26:16,883 INFO routes.game_routes:72 User [samantha-pothitakis@uiowa.edu] is deleting game #6632cf8d18b378776d20e76b.
+2024-05-01 18:26:16,982 INFO routes.game_routes:89 	 Game #[6632cf8d18b378776d20e76b] is deleted.
+2024-05-01 18:26:17,013 INFO routes.game_routes:18 viewing 7 games
+2024-05-01 18:26:18,624 INFO routes.game_routes:72 User [samantha-pothitakis@uiowa.edu] is deleting game #66326b3deba5e23631a672d7.
+2024-05-01 18:26:30,191 INFO routes.game_routes:38 User [samantha-pothitakis@uiowa.edu] is creating a game.
+2024-05-01 18:26:30,232 INFO routes.game_routes:40 	 A new game #[6632cfa618b378776d20e76c] created.
+2024-05-01 18:26:30,264 INFO routes.game_routes:18 viewing 8 games
+2024-05-01 18:27:30,599 INFO routes.game_routes:18 viewing 8 games
+2024-05-01 18:27:55,968 INFO routes.game_routes:18 viewing 3 games
+2024-05-01 18:28:00,584 INFO routes.game_routes:48 User [samantha-pothitakis@uiowa.edu] is updating game #6632cfa618b378776d20e76c.
+2024-05-01 18:28:00,675 INFO routes.game_routes:66 	 Game #[6632cfa618b378776d20e76c] is updated.
+2024-05-01 18:28:00,706 INFO routes.game_routes:18 viewing 3 games
+2024-05-01 18:29:21,332 INFO routes.team_routes:22 viewing 1 team
+2024-05-01 18:29:22,319 INFO routes.team_routes:28 viewing team #6631e738dce0aa3d296ca5e8 details.
+2024-05-01 18:29:24,375 INFO routes.team_routes:22 viewing 1 team
+2024-05-01 18:34:22,678 INFO routes.team_routes:71 User [samantha-pothitakis@uiowa.edu] is creating an team.
+2024-05-01 18:34:22,729 INFO routes.player_routes:41 	 A new player #[6632d17e18b378776d20e76d] created.
+2024-05-01 18:34:22,761 INFO routes.player_routes:41 	 A new player #[6632d17e18b378776d20e76e] created.
+2024-05-01 18:34:22,792 INFO routes.player_routes:41 	 A new player #[6632d17e18b378776d20e76f] created.
+2024-05-01 18:34:22,824 INFO routes.team_routes:75 	 A new team #[6632d17e18b378776d20e770] created.
+2024-05-01 18:34:22,863 INFO routes.team_routes:22 viewing 2 team
+2024-05-01 18:34:24,273 INFO routes.team_routes:116 User [samantha-pothitakis@uiowa.edu] is deleting team #6632d17e18b378776d20e770.
+2024-05-01 18:34:24,370 INFO routes.team_routes:133 	 Team #[6632d17e18b378776d20e770] is deleted.
+2024-05-01 18:34:24,404 INFO routes.team_routes:22 viewing 1 team
+2024-05-01 18:34:36,977 INFO routes.users:39 User [sam@gam.com] is signing in the system.
+2024-05-01 18:34:37,243 WARN routes.users:48 	 User [sam@gam.com] signed in
+2024-05-01 18:35:53,063 INFO routes.team_routes:22 viewing 1 team
+2024-05-01 18:35:54,081 INFO routes.team_routes:116 User [sam@gam.com] is deleting team #6631e738dce0aa3d296ca5e8.
+2024-05-01 18:35:54,180 INFO routes.team_routes:133 	 Team #[6631e738dce0aa3d296ca5e8] is deleted.
+2024-05-01 18:35:54,213 INFO routes.team_routes:22 viewing 0 team
+2024-05-01 18:35:55,348 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:35:59,244 INFO routes.game_routes:72 User [sam@gam.com] is deleting game #6632cfa618b378776d20e76c.
+2024-05-01 18:36:02,861 INFO routes.game_routes:48 User [sam@gam.com] is updating game #6632cfa618b378776d20e76c.
+2024-05-01 18:36:26,261 INFO routes.game_routes:18 viewing 0 games
+2024-05-01 18:36:28,387 INFO routes.game_routes:18 viewing 0 games
+2024-05-01 18:36:44,919 INFO routes.users:39 User [sam@gam.com] is signing in the system.
+2024-05-01 18:36:45,189 WARN routes.users:48 	 User [sam@gam.com] signed in
+2024-05-01 18:36:45,236 INFO routes.game_routes:18 viewing 0 games
+2024-05-01 18:36:52,726 INFO routes.game_routes:38 User [sam@gam.com] is creating a game.
+2024-05-01 18:36:52,793 INFO routes.game_routes:40 	 A new game #[6632d21418b378776d20e771] created.
+2024-05-01 18:36:52,825 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:36:54,618 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:36:55,316 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:36:55,546 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:36:57,113 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:36:57,318 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:36:57,521 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:36:58,381 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:36:58,533 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:37:21,887 INFO routes.game_routes:38 User [sam@gam.com] is creating a game.
+2024-05-01 18:37:21,927 INFO routes.game_routes:40 	 A new game #[6632d23118b378776d20e772] created.
+2024-05-01 18:37:21,962 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:37:38,927 INFO routes.game_routes:48 User [sam@gam.com] is updating game #6632d23118b378776d20e772.
+2024-05-01 18:37:39,018 INFO routes.game_routes:66 	 Game #[6632d23118b378776d20e772] is updated.
+2024-05-01 18:37:39,049 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:37:41,311 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:37:48,347 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:37:55,796 INFO routes.users:39 User [sam@gam.com] is signing in the system.
+2024-05-01 18:37:56,064 WARN routes.users:48 	 User [sam@gam.com] signed in
+2024-05-01 18:37:57,529 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:38:01,325 INFO routes.game_routes:72 User [sam@gam.com] is deleting game #6632d23118b378776d20e772.
+2024-05-01 18:38:01,418 INFO routes.game_routes:89 	 Game #[6632d23118b378776d20e772] is deleted.
+2024-05-01 18:38:01,450 INFO routes.game_routes:18 viewing 0 games
+2024-05-01 18:38:08,945 INFO routes.game_routes:38 User [sam@gam.com] is creating a game.
+2024-05-01 18:38:08,979 INFO routes.game_routes:40 	 A new game #[6632d26018b378776d20e773] created.
+2024-05-01 18:38:09,010 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:38:12,821 INFO routes.game_routes:18 viewing 1 games
+2024-05-01 18:42:10,579 INFO routes.game_routes:38 User [sam@gam.com] is creating a game.
+2024-05-01 18:42:10,633 INFO routes.game_routes:40 	 A new game #[6632d35218b378776d20e774] created.
+2024-05-01 18:42:10,667 INFO routes.game_routes:18 viewing 2 games
+2024-05-01 18:42:14,084 INFO routes.game_routes:48 User [sam@gam.com] is updating game #6632d35218b378776d20e774.
+2024-05-01 18:42:14,186 INFO routes.game_routes:66 	 Game #[6632d35218b378776d20e774] is updated.
+2024-05-01 18:42:14,219 INFO routes.game_routes:18 viewing 2 games
+2024-05-01 18:42:23,138 INFO routes.game_routes:48 User [sam@gam.com] is updating game #6632d35218b378776d20e774.
+2024-05-01 18:42:23,240 INFO routes.game_routes:66 	 Game #[6632d35218b378776d20e774] is updated.
+2024-05-01 18:42:23,272 INFO routes.game_routes:18 viewing 2 games
+2024-05-01 18:42:42,461 INFO routes.game_routes:48 User [sam@gam.com] is updating game #6632d35218b378776d20e774.
+2024-05-01 18:42:42,563 INFO routes.game_routes:66 	 Game #[6632d35218b378776d20e774] is updated.
+2024-05-01 18:42:42,598 INFO routes.game_routes:18 viewing 2 games
+2024-05-01 18:42:55,637 INFO routes.game_routes:72 User [sam@gam.com] is deleting game #6632d35218b378776d20e774.
+2024-05-01 18:42:56,526 INFO routes.game_routes:72 User [sam@gam.com] is deleting game #6632d35218b378776d20e774.
+2024-05-01 18:43:00,186 INFO routes.game_routes:18 viewing 0 games
